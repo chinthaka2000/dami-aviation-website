@@ -1,0 +1,377 @@
+/* Course Page Styles */
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a1929;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #B5054A, #D4175C);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #D4175C, #B5054A);
+}
+
+/* Fade in animation for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Enhanced testimonial card animations */
+@keyframes testimonialSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.testimonial-card {
+  animation: testimonialSlideIn 0.8s ease-out forwards;
+}
+
+/* Star rating animation */
+@keyframes starGlow {
+  0% {
+    filter: drop-shadow(0 0 2px rgba(255, 193, 7, 0.3));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 8px rgba(255, 193, 7, 0.6));
+  }
+
+  100% {
+    filter: drop-shadow(0 0 2px rgba(255, 193, 7, 0.3));
+  }
+}
+
+.star-rating:hover .star-filled {
+  animation: starGlow 1s ease-in-out infinite;
+}
+
+/* Card hover effects */
+@keyframes cardFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-5px) rotate(0.5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.testimonial-card:hover {
+  animation: cardFloat 2s ease-in-out infinite;
+}
+
+/* Google-style card shadow */
+.google-card-shadow {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.google-card-shadow:hover {
+  box-shadow:
+    0 14px 28px rgba(212, 23, 92, 0.25),
+    0 10px 10px rgba(212, 23, 92, 0.22);
+}
+
+/* Ken Burns effect for hero images */
+@keyframes kenBurns {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+
+  50% {
+    transform: scale(1.1) translateX(-2%);
+  }
+
+  100% {
+    transform: scale(1.05) translateX(0);
+  }
+}
+
+.animate-ken-burns {
+  animation: kenBurns 20s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse-slow {
+  0% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+/* Particle animations */
+.particle {
+  position: absolute;
+  background: #D4175C;
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: particleFloat 15s infinite linear;
+}
+
+.particle-1 {
+  width: 4px;
+  height: 4px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.particle-2 {
+  width: 6px;
+  height: 6px;
+  top: 60%;
+  left: 80%;
+  animation-delay: 5s;
+}
+
+.particle-3 {
+  width: 3px;
+  height: 3px;
+  top: 40%;
+  left: 60%;
+  animation-delay: 10s;
+}
+
+.particle-4 {
+  width: 5px;
+  height: 5px;
+  top: 80%;
+  left: 20%;
+  animation-delay: 2s;
+}
+
+.particle-5 {
+  width: 4px;
+  height: 4px;
+  top: 30%;
+  left: 90%;
+  animation-delay: 8s;
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Cloud animations */
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
+  opacity: 0.3;
+}
+
+.cloud-1 {
+  width: 100px;
+  height: 40px;
+  top: 15%;
+  left: -100px;
+  animation: cloudMove1 25s infinite linear;
+}
+
+.cloud-2 {
+  width: 80px;
+  height: 30px;
+  top: 25%;
+  left: -80px;
+  animation: cloudMove2 30s infinite linear;
+}
+
+.cloud-3 {
+  width: 120px;
+  height: 50px;
+  top: 35%;
+  left: -120px;
+  animation: cloudMove3 35s infinite linear;
+}
+
+@keyframes cloudMove1 {
+  0% {
+    left: -100px;
+  }
+
+  100% {
+    left: 100vw;
+  }
+}
+
+@keyframes cloudMove2 {
+  0% {
+    left: -80px;
+  }
+
+  100% {
+    left: 100vw;
+  }
+}
+
+@keyframes cloudMove3 {
+  0% {
+    left: -120px;
+  }
+
+  100% {
+    left: 100vw;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .particle {
+    display: none;
+    /* Hide particles on mobile for performance */
+  }
+}
+
+/* Focus styles for accessibility */
+button:focus-visible {
+  outline: 2px solid #D4175C;
+  outline-offset: 2px;
+}
+
+/* Navigation dots animation */
+@keyframes dotPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav-dot-active {
+  animation: dotPulse 2s ease-in-out infinite;
+}
+
+/* Section reveal animation */
+@keyframes sectionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-reveal {
+  animation: sectionReveal 0.8s ease-out forwards;
+}
+
+/* Gradient text animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background: linear-gradient(-45deg, #B5054A, #D4175C, #B5054A, #D4175C);
+  background-size: 400% 400%;
+  animation: gradientShift 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
