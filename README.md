@@ -140,7 +140,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For support and inquiries:
 - WhatsApp: +94 74 329 3829
 - Email: info@damiaviation.com
-- Website: [DAMI Aviation](https://damiaviation.com)
+- Website: [DAMI Aviation](https://damiaviation.lk)
 
 ## 🙏 **Acknowledgments**
 
@@ -150,4 +150,4 @@ For support and inquiries:
 
 ---
 
-**DAMI Aviation Training Institute** - Elevating Aviation Careers Since [Year]
+**DAMI Aviation Training Institute** - Elevating Aviation Careers Since 2025
