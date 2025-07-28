@@ -1,10 +1,21 @@
 # DAMI Aviation Training Institute Website
 
-A modern, responsive website for DAMI Aviation Training Institute built with React, TypeScript, and Tailwind CSS.
+<div align="center">
+  <img src="public/Logo.png" alt="DAMI Aviation Logo" width="200"/>
+  
+  <p><strong>A modern, responsive website for DAMI Aviation Training Institute built with React, TypeScript, and Tailwind CSS.</strong></p>
+  
+  ![Website Preview](docs/images/Screenshot%202025-07-29%20at%2002.40.41.png)
+</div>
 
 ## 🚀 Features
 
 ### 🎓 **Training Programs**
+<div align="center">
+  <img src="docs/images/Screenshot%202025-07-29%20at%2002.41.01.png" alt="Course Page" width="600"/>
+  <p><em>Comprehensive training program with detailed modules and pricing</em></p>
+</div>
+
 - Comprehensive cabin crew training course
 - Detailed course modules and curriculum
 - Entry requirements and qualifications
@@ -12,6 +23,11 @@ A modern, responsive website for DAMI Aviation Training Institute built with Rea
 - Pricing and enrollment information
 
 ### 🖼️ **Interactive Gallery**
+<div align="center">
+  <img src="docs/images/Screenshot%202025-07-29%20at%2002.41.26.png" alt="Gallery Page" width="600"/>
+  <p><em>Interactive gallery with 11 specialized training categories</em></p>
+</div>
+
 - 11 specialized training categories
 - High-quality images and videos
 - Category-based filtering
@@ -19,6 +35,11 @@ A modern, responsive website for DAMI Aviation Training Institute built with Rea
 - Professional training documentation
 
 ### 🛠️ **Additional Services**
+<div align="center">
+  <img src="docs/images/Screenshot%202025-07-29%20at%2002.42.02.png" alt="Other Services Page" width="600"/>
+  <p><em>Professional services beyond main training programs</em></p>
+</div>
+
 - Airport Service Agent Exam Preparation (1500+ MCQs)
 - Professional CV Creation Service
 - Aviation Interview Preparation
@@ -27,6 +48,11 @@ A modern, responsive website for DAMI Aviation Training Institute built with Rea
 - English Proficiency Test Preparation
 
 ### 🎨 **Modern Design**
+<div align="center">
+  <img src="docs/images/Screenshot%202025-07-29%20at%2002.42.38.png" alt="Responsive Design" width="600"/>
+  <p><em>Fully responsive design optimized for all devices</em></p>
+</div>
+
 - Responsive design for all devices
 - Professional aviation-themed UI
 - Smooth animations and transitions
@@ -34,6 +60,16 @@ A modern, responsive website for DAMI Aviation Training Institute built with Rea
 - SEO-friendly structure
 
 ## 🛠️ **Tech Stack**
+
+<div align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/>
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"/>
+</div>
+
+<br/>
 
 - **Frontend:** React 18 with TypeScript
 - **Styling:** Tailwind CSS
@@ -86,6 +122,11 @@ src/
 
 ## 🎯 **Key Pages**
 
+<div align="center">
+  <img src="docs/images/Screenshot%202025-07-29%20at%2002.40.41.png" alt="Page Navigation" width="600"/>
+  <p><em>Seamless navigation between all sections</em></p>
+</div>
+
 - **Home** (`/`) - Landing page with hero, about, and contact sections
 - **Training** (`/course`) - Detailed course information and enrollment
 - **Gallery** (`/gallery`) - Interactive photo and video gallery
@@ -125,7 +166,9 @@ Modify course information in `src/data/` directory:
 
 ## 📄 **License**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is proprietary software owned by DAMI Aviation Training Institute. All rights reserved. See the [LICENSE](LICENSE) file for details.
+
+**⚠️ IMPORTANT:** This software is not open source and may not be copied, modified, or distributed without explicit permission from DAMI Aviation Training Institute.
 
 ## 🤝 **Contributing**
 
@@ -137,10 +180,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 **Support**
 
+<div align="center">
+  <img src="docs/images/Screenshot%202025-07-29%20at%2002.40.41.png" alt="Contact Section" width="600"/>
+  <p><em>Multiple ways to get in touch with our team</em></p>
+</div>
+
 For support and inquiries:
-- WhatsApp: +94 74 329 3829
-- Email: info@damiaviation.com
-- Website: [DAMI Aviation](https://damiaviation.com)
+- **WhatsApp:** [+94 74 329 3829](https://wa.me/94743293829)
+- **Email:** info@damiaviation.com
+- **Website:** [DAMI Aviation](https://damiaviation.lk)
 
 ## 🙏 **Acknowledgments**
 
@@ -150,4 +198,4 @@ For support and inquiries:
 
 ---
 
-**DAMI Aviation Training Institute** - Elevating Aviation Careers Since [Year]
+**DAMI Aviation Training Institute** - Elevating Aviation Careers Since 2025
