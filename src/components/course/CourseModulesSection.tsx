@@ -54,29 +54,36 @@ const CourseModulesSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Tab Navigation */}
-        <div className="flex justify-center mb-12">
-          <div className="bg-[#0f2942]/50 backdrop-blur-sm rounded-full p-2 border border-gray-700/30">
-            <button
-              onClick={() => handleTabChange('theoretical')}
-              className={`px-8 py-3 rounded-full font-medium transition-all duration-300 ${activeTab === 'theoretical'
-                ? 'bg-[#D4175C] text-white shadow-lg shadow-[#D4175C]/30'
-                : 'text-gray-300 hover:text-white hover:bg-white/5'
-                }`}
-            >
-              <BookOpen className="inline-block w-4 h-4 mr-2" />
-              Theoretical Learning
-            </button>
-            <button
-              onClick={() => handleTabChange('practical')}
-              className={`px-8 py-3 rounded-full font-medium transition-all duration-300 ${activeTab === 'practical'
-                ? 'bg-[#D4175C] text-white shadow-lg shadow-[#D4175C]/30'
-                : 'text-gray-300 hover:text-white hover:bg-white/5'
-                }`}
-            >
-              <Users className="inline-block w-4 h-4 mr-2" />
-              Physical Training
-            </button>
+        {/* Tab Navigation - Mobile Optimized */}
+        <div className="flex justify-center mb-12 px-4">
+          <div className="bg-[#0f2942]/50 backdrop-blur-sm rounded-2xl p-2 border border-gray-700/30 w-full max-w-md">
+            {/* Mobile: Stacked Layout */}
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-0">
+              <button
+                onClick={() => handleTabChange('theoretical')}
+                className={`flex-1 px-4 sm:px-6 py-3 rounded-xl sm:rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${activeTab === 'theoretical'
+                  ? 'bg-[#D4175C] text-white shadow-lg shadow-[#D4175C]/30'
+                  : 'text-gray-300 hover:text-white hover:bg-white/5'
+                  }`}
+              >
+                <div className="flex items-center justify-center">
+                  <BookOpen className="w-4 h-4 mr-2 flex-shrink-0" />
+                  <span className="truncate">Theoretical Learning</span>
+                </div>
+              </button>
+              <button
+                onClick={() => handleTabChange('practical')}
+                className={`flex-1 px-4 sm:px-6 py-3 rounded-xl sm:rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${activeTab === 'practical'
+                  ? 'bg-[#D4175C] text-white shadow-lg shadow-[#D4175C]/30'
+                  : 'text-gray-300 hover:text-white hover:bg-white/5'
+                  }`}
+              >
+                <div className="flex items-center justify-center">
+                  <Users className="w-4 h-4 mr-2 flex-shrink-0" />
+                  <span className="truncate">Physical Training</span>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
 

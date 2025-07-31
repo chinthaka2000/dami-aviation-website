@@ -197,17 +197,20 @@ const CourseOverviewSection = () => {
                 <div className="text-white font-semibold mb-1">Certified</div>
                 <div className="text-gray-400 text-sm">International Standard</div>
               </div>
+
             </div>
           </div>
+
         </div>
+
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll Indicator - Enhanced positioning */}
       <div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce cursor-pointer"
+        className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce cursor-pointer bg-gradient-to-b from-[#0a1929] to-[#0a1929]/95 backdrop-blur-md rounded-full p-4 border-2 border-[#D4175C] hover:border-[#D4175C]/80 transition-all duration-300 hover:bg-[#D4175C]/20 z-[10000] shadow-2xl hover:shadow-[#D4175C]/50 ring-2 ring-[#D4175C]/28"
         onClick={scrollToModules}
       >
-        <ChevronDown size={32} className="text-[#D4175C]" />
+        <ChevronDown size={20} className="text-[#D4175C] drop-shadow-lg" />
       </div>
 
       <style>{`

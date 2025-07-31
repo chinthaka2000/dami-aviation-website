@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { handleRegister } from '../utils/whatsapp';
 import { GalleryImage } from '../types/course';
+import { getGalleryImageUrl, getImageUrl } from '../utils/imageHelpers';
 
 const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -13,7 +14,7 @@ const GalleryPage = () => {
       name: 'Training Facilities',
       icon: '🏫',
       description: 'State-of-the-art training centers and classrooms',
-      coverImage: '/DSC05892 copy.jpg'
+      coverImage: getGalleryImageUrl('dsc05892', { width: 600, height: 400 })
     },
 
     {
@@ -21,7 +22,7 @@ const GalleryPage = () => {
       name: 'Cabin Crew Training',
       icon: '👨‍✈️',
       description: 'Comprehensive cabin crew preparation programs',
-      coverImage: '/DSC05924 copy.jpg'
+      coverImage: getGalleryImageUrl('dsc05924', { width: 600, height: 400 })
     },
 
     {
@@ -29,135 +30,130 @@ const GalleryPage = () => {
       name: 'Our Team & Students',
       icon: '👥',
       description: 'Meet our experienced instructors and successful students',
-      coverImage: '/DSC06071 copy.jpg'
+      coverImage: getGalleryImageUrl('dsc06071', { width: 600, height: 400 })
     },
     {
       id: 'events',
       name: 'Events & Ceremonies',
       icon: '🎓',
       description: 'Graduation ceremonies and special events',
-      coverImage: '/DSC09337 copy.jpg'
+      coverImage: getGalleryImageUrl('dsc09337', { width: 600, height: 400 })
     },
     {
       id: 'fire-safety',
       name: 'Fire Safety & Rescue Training',
       icon: '🚨',
       description: 'Emergency fire safety procedures and rescue operations',
-      coverImage: '/DSC05569 copy.jpg'
+      coverImage: getGalleryImageUrl('dsc05569', { width: 600, height: 400 })
     },
     {
       id: 'first-aid',
       name: 'Basic First Aid & CPR Training',
       icon: '🏥',
       description: 'Essential first aid skills and medical emergency response',
-      coverImage: '/DSC05657 copy.jpg'
+      coverImage: getGalleryImageUrl('dsc05657', { width: 600, height: 400 })
     },
     {
       id: 'grooming',
       name: 'Professional Grooming & Appearance Standards',
       icon: '👔',
       description: 'Aviation industry appearance standards and grooming',
-      coverImage: '/DSC05625 copy.jpg'
+      coverImage: getGalleryImageUrl('dsc05625', { width: 600, height: 400 })
     },
     {
       id: 'fitness',
       name: 'Physical Fitness Programme',
       icon: '💪',
       description: 'Aviation-specific fitness and conditioning program',
-      coverImage: '/DSC05670 copy.jpg'
+      coverImage: getGalleryImageUrl('dsc05670', { width: 600, height: 400 })
     },
     {
       id: 'water-survival',
       name: 'Water Survival Training',
       icon: '🌊',
       description: 'Emergency water survival techniques and procedures',
-      coverImage: '/DSC09510 copy.jpg'
+      coverImage: getGalleryImageUrl('dsc09510', { width: 600, height: 400 })
     }
   ];
 
   const galleryImages: GalleryImage[] = [
     // Training Facilities Category
     {
-      src: '/DSC05892 copy.jpg',
+      src: getGalleryImageUrl('dsc05892', { width: 800, height: 600 }),
       title: 'Aviation Training Center',
       description: 'State-of-the-art training facilities with modern equipment',
       category: 'facilities',
       type: 'image'
     },
     {
-      src: '/DSC06041 copy.jpg',
+      src: getGalleryImageUrl('dsc06041', { width: 800, height: 600 }),
       title: 'Training Session',
       description: 'Hands-on learning experience in our classrooms',
       category: 'facilities',
       type: 'image'
     },
     {
-      src: '/DSC05667 copy.jpg',
+      src: getGalleryImageUrl('dsc05667', { width: 800, height: 600 }),
       title: 'Modern Training Facility',
       description: 'Our well-equipped training center',
       category: 'facilities',
       type: 'image'
     },
     {
-      src: '/DSC09404 copy.jpg',
+      src: getGalleryImageUrl('dsc09404', { width: 800, height: 600 }),
       title: 'Modern Training Facility',
       description: 'Our well-equipped training center',
       category: 'facilities',
       type: 'image'
     },
     {
-      src: '/DSC09425 copy.jpg',
+      src: getGalleryImageUrl('dsc09425', { width: 800, height: 600 }),
       title: 'Modern Training Facility',
       description: 'Our well-equipped training center',
       category: 'facilities',
       type: 'image'
     },
-    // Flight Training Category
-
 
     // Cabin Crew Training Category
     {
-      src: '/DSC05924 copy.jpg',
+      src: getGalleryImageUrl('dsc05924', { width: 800, height: 600 }),
       title: 'Cabin Crew Training',
       description: 'Professional cabin crew preparation and service training',
       category: 'cabin-crew',
       type: 'image'
     },
     {
-      src: '/DSC09576 copy.jpg',
+      src: getGalleryImageUrl('dsc09576', { width: 800, height: 600 }),
       title: 'Cabin Service Training',
       description: 'Real environment training for cabin crew',
       category: 'cabin-crew',
       type: 'image'
     },
     {
-      src: '/DSC05529 copy.jpg',
+      src: getGalleryImageUrl('dsc05529', { width: 800, height: 600 }),
       title: 'Cabin Crew Training',
       description: 'Professional cabin crew preparation and service training',
       category: 'cabin-crew',
       type: 'image'
     },
     {
-      src: '/DSC05532 copy.jpg',
+      src: getGalleryImageUrl('dsc05532', { width: 800, height: 600 }),
       title: 'Cabin Service Training',
       description: 'Real environment training for cabin crew',
       category: 'cabin-crew',
       type: 'image'
     },
-
-    // Aircraft & Equipment Category
-
 
     // Our Team & Students Category
     {
-      src: '/aboutus.jpg',
+      src: getGalleryImageUrl('dsc06071', { width: 800, height: 600 }),
       title: 'DAMI Aviation Students',
       description: 'Our experienced instructors and aviation professionals',
       category: 'team',
       type: 'image'
     },
     {
-      src: '/DSC09243 copy.jpg',
+      src: getGalleryImageUrl('dsc09243', { width: 800, height: 600 }),
       title: 'DAMI Aviation',
       description: 'Our official aviation training',
       category: 'team',
@@ -166,49 +162,49 @@ const GalleryPage = () => {
 
     // Events & Ceremonies Category
     {
-      src: '/DSC05958 copy.jpg',
+      src: getGalleryImageUrl('dsc05958', { width: 800, height: 600 }),
       title: 'Graduation Ceremony',
       description: 'Celebrating our successful aviation graduates',
       category: 'events',
       type: 'image'
     },
     {
-      src: '/DSC05959 copy.jpg',
+      src: getGalleryImageUrl('dsc05959', { width: 800, height: 600 }),
       title: 'Awards Ceremony',
       description: 'Recognizing outstanding student achievements',
       category: 'events',
       type: 'image'
     },
     {
-      src: '/DSC05960 copy.jpg',
+      src: getGalleryImageUrl('dsc05960', { width: 800, height: 600 }),
       title: 'Graduation Ceremony',
       description: 'Celebrating our successful aviation graduates',
       category: 'events',
       type: 'image'
     },
     {
-      src: '/DSC05965 copy.jpg',
+      src: getGalleryImageUrl('dsc05965', { width: 800, height: 600 }),
       title: 'Awards Ceremony',
       description: 'Recognizing outstanding student achievements',
       category: 'events',
       type: 'image'
     },
     {
-      src: '/DSC05970 copy.jpg',
+      src: getGalleryImageUrl('dsc05970', { width: 800, height: 600 }),
       title: 'Awards Ceremony',
       description: 'Recognizing outstanding student achievements',
       category: 'events',
       type: 'image'
     },
     {
-      src: '/DSC05971 copy.jpg',
+      src: getGalleryImageUrl('dsc05971', { width: 800, height: 600 }),
       title: 'Graduation Ceremony',
       description: 'Celebrating our successful aviation graduates',
       category: 'events',
       type: 'image'
     },
     {
-      src: '/DSC05974 copy.jpg',
+      src: getGalleryImageUrl('dsc05974', { width: 800, height: 600 }),
       title: 'Awards Ceremony',
       description: 'Recognizing outstanding student achievements',
       category: 'events',
@@ -217,28 +213,28 @@ const GalleryPage = () => {
 
     // Fire Safety & Rescue Training Category
     {
-      src: '/DSC05931 copy.jpg',
+      src: getGalleryImageUrl('dsc05931', { width: 800, height: 600 }),
       title: 'Fire Safety Training',
       description: 'Emergency fire safety procedures and rescue operations',
       category: 'fire-safety',
       type: 'image'
     },
     {
-      src: '/DSC05926 copy.jpg',
+      src: getGalleryImageUrl('dsc05926', { width: 800, height: 600 }),
       title: 'Emergency Rescue Training',
       description: 'Hands-on rescue training and emergency response',
       category: 'fire-safety',
       type: 'image'
     },
     {
-      src: '/DSC05938 copy.jpg',
+      src: getGalleryImageUrl('dsc05938', { width: 800, height: 600 }),
       title: 'Emergency Rescue Training',
       description: 'Hands-on rescue training and emergency response',
       category: 'fire-safety',
       type: 'image'
     },
     {
-      src: '/DSC05572 copy.jpg',
+      src: getGalleryImageUrl('dsc05572', { width: 800, height: 600 }),
       title: 'Emergency Rescue Training',
       description: 'Hands-on rescue training and emergency response',
       category: 'fire-safety',
@@ -247,88 +243,74 @@ const GalleryPage = () => {
 
     // Basic First Aid & CPR Training Category
     {
-      src: '/DSC05657 copy.jpg',
+      src: getGalleryImageUrl('dsc05657', { width: 800, height: 600 }),
       title: 'First Aid Training',
       description: 'Essential first aid skills and medical emergency response',
       category: 'first-aid',
       type: 'image'
     },
     {
-      src: '/DSC05657 copy.jpg',
+      src: getGalleryImageUrl('dsc09376', { width: 800, height: 600 }),
       title: 'CPR Training Session',
       description: 'Cardiopulmonary resuscitation training and certification',
-      category: 'first-aid',
-      type: 'image'
-    },
-    {
-      src: '/DSC09376 copy.jpg',
-      title: 'CPR Training Session',
-      description: '',
       category: 'first-aid',
       type: 'image'
     },
 
     // Professional Grooming & Appearance Standards Category
     {
-      src: '/DSC05625 copy.jpg',
+      src: getGalleryImageUrl('dsc05625', { width: 800, height: 600 }),
       title: 'Professional Grooming',
       description: 'Aviation industry appearance standards and grooming',
       category: 'grooming',
       type: 'image'
     },
     {
-      src: '/DSC06046 copy.jpg',
+      src: getGalleryImageUrl('dsc06046', { width: 800, height: 600 }),
       title: 'Uniform Standards',
       description: 'Professional uniform fitting and presentation',
-      category: 'grooming',
-      type: 'image'
-    },
-    {
-      src: '/DSC05625 copy.jpg',
-      title: 'Professional Grooming',
-      description: 'Aviation industry appearance standards and grooming',
       category: 'grooming',
       type: 'image'
     },
 
     // Physical Fitness Programme Category
     {
-      src: '/DSC05670 copy.jpg',
+      src: getGalleryImageUrl('dsc05670', { width: 800, height: 600 }),
       title: 'Physical Fitness Training',
       description: 'Aviation-specific fitness and conditioning program',
       category: 'fitness',
       type: 'image'
     },
     {
-      src: '/DSC09387 copy.jpg',
+      src: getGalleryImageUrl('dsc09387', { width: 800, height: 600 }),
       title: 'Fitness Assessment',
       description: 'Physical fitness evaluation and training sessions',
       category: 'fitness',
       type: 'image'
     },
     {
-      src: '/DSC09396 copy.jpg',
+      src: getGalleryImageUrl('dsc09396', { width: 800, height: 600 }),
       title: 'Physical Fitness Training',
       description: 'Aviation-specific fitness and conditioning program',
       category: 'fitness',
       type: 'image'
     },
     {
-      src: '/DSC09381 copy.jpg',
+      src: getGalleryImageUrl('dsc09381', { width: 800, height: 600 }),
       title: 'Fitness Assessment',
       description: 'Physical fitness evaluation and training sessions',
       category: 'fitness',
       type: 'image'
     },
     {
-      src: '/DSC09384 copy.jpg',
+      src: getGalleryImageUrl('dsc09384', { width: 800, height: 600 }),
       title: 'Physical Fitness Training',
       description: 'Aviation-specific fitness and conditioning program',
       category: 'fitness',
       type: 'image'
     },
     {
-      src: '/DSC09388 copy.jpg',
+      src: getGalleryImageUrl('dsc09388', { width: 800, height: 600 }),
       title: 'Fitness Assessment',
       description: 'Physical fitness evaluation and training sessions',
       category: 'fitness',
@@ -337,66 +319,54 @@ const GalleryPage = () => {
 
     // Water Survival Training Category
     {
-      src: '/DSC09510 copy.jpg',
+      src: getGalleryImageUrl('dsc09510', { width: 800, height: 600 }),
       title: 'Water Survival Training',
       description: 'Emergency water survival techniques and procedures',
       category: 'water-survival',
       type: 'image'
     },
     {
-      src: '/DSC06178 copy.jpg',
+      src: getGalleryImageUrl('dsc06178', { width: 800, height: 600 }),
       title: 'Ditching Procedures',
       description: 'Water emergency evacuation and survival training',
       category: 'water-survival',
       type: 'image'
     },
     {
-      src: '/DSC06190 copy.jpg',
-      title: '',
+      src: getGalleryImageUrl('dsc06190', { width: 800, height: 600 }),
+      title: 'Water Emergency Training',
       description: 'Water emergency evacuation and survival training',
       category: 'water-survival',
       type: 'image'
     },
     {
-      src: '/DSC05847 copy.jpg',
+      src: getGalleryImageUrl('dsc05847', { width: 800, height: 600 }),
       title: 'Water Survival Training',
       description: 'Emergency water survival techniques and procedures',
       category: 'water-survival',
       type: 'image'
     },
     {
-      src: '/DSC05861 copy.jpg',
+      src: getGalleryImageUrl('dsc05861', { width: 800, height: 600 }),
       title: 'Ditching Procedures',
       description: 'Water emergency evacuation and survival training',
       category: 'water-survival',
       type: 'image'
     },
     {
-      src: '/DSC05883 copy.jpg',
-      title: '',
+      src: getGalleryImageUrl('dsc05883', { width: 800, height: 600 }),
+      title: 'Water Safety Training',
       description: 'Water emergency evacuation and survival training',
       category: 'water-survival',
       type: 'image'
     },
     {
-      src: '/DSC05827 copy.jpg',
-      title: '',
+      src: getGalleryImageUrl('dsc05827', { width: 800, height: 600 }),
+      title: 'Emergency Water Procedures',
       description: 'Water emergency evacuation and survival training',
       category: 'water-survival',
       type: 'image'
     }
-
-    // TO ADD MORE IMAGES:
-    // 1. Add your image files to the 'public' folder
-    // 2. Add a comma after the entry above, then add new entries like this:
-    // 
-    // ,{
-    //   src: '/your-new-image.jpg',
-    //   title: 'Your Image Title',
-    //   description: 'Description of your image',
-    //   category: 'facilities', // Choose appropriate category
-    //   type: 'image' // or 'video'
-    // }
   ];
 
   // Filter images based on selected category

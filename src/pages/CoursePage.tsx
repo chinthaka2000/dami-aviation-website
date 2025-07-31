@@ -9,7 +9,7 @@ import TestimonialsSection from '../components/course/TestimonialsSection';
 import '../styles/course.css';
 
 const CoursePage = () => {
-  const [activeSection, setActiveSection] = useState('overview');
+  const [, setActiveSection] = useState('overview');
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 

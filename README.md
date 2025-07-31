@@ -4,8 +4,6 @@
   <img src="public/Logo.png" alt="DAMI Aviation Logo" width="200"/>
   
   <p><strong>A modern, responsive website for DAMI Aviation Training Institute built with React, TypeScript, and Tailwind CSS.</strong></p>
-  
-  ![Website Preview](docs/images/Screenshot%202025-07-29%20at%2002.40.41.png)
 </div>
 
 ## 🚀 Features

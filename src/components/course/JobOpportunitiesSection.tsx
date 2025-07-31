@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, TrendingUp, Users, Globe, Star, Plane } from 'lucide-react';
+import { Briefcase, TrendingUp, Star } from 'lucide-react';
 import { jobCategories, careerProgression, successMetrics } from '../../data/jobOpportunities';
 
 const JobOpportunitiesSection: React.FC = () => {
@@ -83,29 +83,54 @@ const JobOpportunitiesSection: React.FC = () => {
 
         {/* Career Progression Visualization */}
         <div className="mb-16">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Career <span className="text-[#D4175C]">Progression Path</span>
             </h3>
-            <p className="text-gray-300 max-w-2xl mx-auto">
+            <p className="text-gray-300 max-w-2xl mx-auto px-4">
               Chart your professional growth in the aviation industry with clear advancement opportunities
               and structured career development.
             </p>
           </div>
 
           <div className="relative">
-            {/* Progress Line */}
+            {/* Progress Line - Desktop */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#D4175C] to-[#B5054A] rounded-full hidden md:block"></div>
 
-            <div className="space-y-8 md:space-y-12">
+            {/* Progress Line - Mobile */}
+            <div className="absolute left-6 top-0 w-1 h-full bg-gradient-to-b from-[#D4175C] to-[#B5054A] rounded-full md:hidden"></div>
+
+            <div className="space-y-6 md:space-y-12">
               {careerProgression.map((stage, index) => (
                 <div
                   key={index}
-                  className={`flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} animate-fadeIn`}
+                  className={`flex items-start md:items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} animate-fadeIn`}
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
-                  <div className={`flex-1 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}`}>
-                    <div className="bg-[#0f2942]/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/30 hover:border-[#D4175C]/30 transition-all duration-300">
+                  {/* Mobile Layout */}
+                  <div className="md:hidden flex items-start w-full">
+                    {/* Mobile Circle */}
+                    <div className="w-12 h-12 bg-[#D4175C] rounded-full flex items-center justify-center relative z-10 mr-4 flex-shrink-0">
+                      <Star className="text-white" size={16} />
+                    </div>
+
+                    {/* Mobile Content */}
+                    <div className="flex-1">
+                      <div className="bg-[#0f2942]/50 backdrop-blur-sm rounded-xl p-4 border border-gray-700/30 hover:border-[#D4175C]/30 transition-all duration-300">
+                        <div className="flex items-center mb-2">
+                          <TrendingUp className="text-[#D4175C] mr-2" size={16} />
+                          <span className="text-[#D4175C] text-xs font-medium">{stage.level}</span>
+                        </div>
+                        <h4 className="text-lg font-bold text-white mb-1">{stage.position}</h4>
+                        <div className="text-gray-400 text-xs mb-2">{stage.duration}</div>
+                        <p className="text-gray-300 text-sm leading-relaxed">{stage.description}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Desktop Layout */}
+                  <div className={`hidden md:flex md:flex-1 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}`}>
+                    <div className="bg-[#0f2942]/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/30 hover:border-[#D4175C]/30 transition-all duration-300 w-full">
                       <div className="flex items-center mb-3">
                         <TrendingUp className="text-[#D4175C] mr-3" size={20} />
                         <span className="text-[#D4175C] text-sm font-medium">{stage.level}</span>
@@ -116,12 +141,12 @@ const JobOpportunitiesSection: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Center Circle */}
+                  {/* Desktop Center Circle */}
                   <div className="hidden md:flex w-12 h-12 bg-[#D4175C] rounded-full items-center justify-center relative z-10 mx-4">
                     <Star className="text-white" size={20} />
                   </div>
 
-                  <div className="flex-1"></div>
+                  <div className="hidden md:flex md:flex-1"></div>
                 </div>
               ))}
             </div>
