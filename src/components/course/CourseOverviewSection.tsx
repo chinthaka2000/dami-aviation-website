@@ -14,7 +14,7 @@ const CourseOverviewSection = () => {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: './public/robo.json'
+        path: '/robo.json'
       });
       return () => anim.destroy();
     }
