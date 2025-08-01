@@ -1,13 +1,13 @@
 import React from 'react';
 import CloudinaryImage from './CloudinaryImage';
-import { images, getGalleryImages } from '../data/images';
+import { imageUrls, getImageUrl } from '../data/images';
 
 const ExampleUsage: React.FC = () => {
   return (
     <div>
       {/* Hero image with preset */}
       <CloudinaryImage
-        publicId={images.aviationHero}
+        publicId={imageUrls.aviationHero}
         alt="DAMI Aviation Training"
         preset="hero"
         className="w-full h-screen object-cover"
@@ -15,7 +15,7 @@ const ExampleUsage: React.FC = () => {
 
       {/* Custom sized image */}
       <CloudinaryImage
-        publicId={images.logo}
+        publicId={imageUrls.logo}
         alt="DAMI Aviation Logo"
         width={200}
         height={100}
@@ -25,10 +25,10 @@ const ExampleUsage: React.FC = () => {
 
       {/* Gallery grid */}
       <div className="grid grid-cols-3 gap-4">
-        {getGalleryImages().map((imageId, index) => (
+        {Object.values(imageUrls.fallback).map((imageUrl, index) => (
           <CloudinaryImage
             key={index}
-            publicId={imageId}
+            publicId={imageUrl}
             alt={`Gallery image ${index + 1}`}
             preset="gallery"
             className="rounded-lg shadow-md"
@@ -40,10 +40,10 @@ const ExampleUsage: React.FC = () => {
       <picture>
         <source
           media="(min-width: 768px)"
-          srcSet={`https://res.cloudinary.com/your-cloud-name/image/upload/w_800,q_auto,f_auto/${images.aboutUs}`}
+          srcSet={`https://res.cloudinary.com/dzz0qlqve/image/upload/w_800,q_auto,f_auto/v1753771758/aboutus_imt9ah.jpg`}
         />
         <CloudinaryImage
-          publicId={images.aboutUs}
+          publicId={imageUrls.aboutUs}
           alt="About DAMI Aviation"
           width={400}
           className="w-full"

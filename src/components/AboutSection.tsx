@@ -1,6 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 import { Award, Shield, Gauge, Clock } from 'lucide-react';
+
+interface TimelineItemProps {
+  year: string;
+  title: string;
+  children: React.ReactNode;
+}
+
+interface StatCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
 const AboutSection = () => {
   const dashboardAnimation = useRef(null);
   useEffect(() => {
@@ -60,7 +72,7 @@ const AboutSection = () => {
         <div className="order-1 lg:order-2">
           <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-xl hover:shadow-[#B5054A]/10 hover:border-[#D4175C]/20 transition-all duration-500">
             <img
-              src="/aboutus.jpg"
+              src="https://res.cloudinary.com/dzz0qlqve/image/upload/v1753771758/aboutus_imt9ah.jpg"
               alt="DAMI Aviation Training"
               className="w-full h-[500px] object-cover rounded-xl border-2 border-[#D4175C]/30 shadow-2xl shadow-[#B5054A]/20 hover:border-[#D4175C]/60 hover:shadow-[#D4175C]/30 transition-all duration-500"
             />
@@ -74,7 +86,7 @@ const AboutSection = () => {
         <StatCard icon={<Clock className="text-[#D4175C]" size={32} />} title="Flexible Programs" description="Customized training schedules to fit your needs" />
       </div>
     </div>
-    <style jsx>{`
+    <style>{`
         @keyframes float {
           0% {
             transform: translateY(0px);
@@ -92,7 +104,7 @@ const AboutSection = () => {
       `}</style>
   </section>;
 };
-const TimelineItem = ({
+const TimelineItem: React.FC<TimelineItemProps> = ({
   year,
   title,
   children
@@ -104,7 +116,7 @@ const TimelineItem = ({
     </h4>
     <p className="text-gray-300">{children}</p>
   </div>;
-const StatCard = ({
+const StatCard: React.FC<StatCardProps> = ({
   icon,
   title,
   description
