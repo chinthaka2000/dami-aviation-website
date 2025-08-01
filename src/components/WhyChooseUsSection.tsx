@@ -66,7 +66,7 @@ const WhyChooseUsSection = () => {
         <div className="animate-float">
           <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-xl hover:shadow-[#B5054A]/10 hover:border-[#D4175C]/20 transition-all duration-500">
             <img
-              src="/whych.jpg"
+              src="https://res.cloudinary.com/dzz0qlqve/image/upload/v1754048688/DSC05812_copy_cgwrsq.jpg"
               alt="Why Choose DAMI Aviation"
               className="w-full h-[400px] object-cover rounded-xl border-2 border-[#D4175C]/30 shadow-2xl shadow-[#B5054A]/20 hover:border-[#D4175C]/60 hover:shadow-[#D4175C]/30 transition-all duration-500"
             />
