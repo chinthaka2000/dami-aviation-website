@@ -215,7 +215,7 @@ const Header = () => {
       </div>
     </div>
     {/* Mobile Navigation - Enhanced */}
-    <div className={`md:hidden bg-[#0a1929]/98 backdrop-blur-md border-t border-[#B5054A]/20 shadow-2xl overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+    <div className={`md:hidden bg-[#0a1929]/98 backdrop-blur-md border-t border-[#B5054A]/20 shadow-2xl transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100 overflow-y-auto' : 'max-h-0 opacity-0 overflow-hidden'}`}>
       <div className="container mx-auto px-4 py-6">
         {/* Mobile Menu Header */}
         <div className="text-center mb-6 pb-4 border-b border-gray-700/30">
