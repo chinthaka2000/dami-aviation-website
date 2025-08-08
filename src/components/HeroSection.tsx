@@ -57,14 +57,14 @@ const HeroSection = () => {
 
         <div className="text-center lg:text-left animate-fadeIn">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-slideUp">
-            Build Your Future <br />
+            Launch Your Career <br />
             <span className="text-[#D4175C] animate-highlight">
-              in the Skies
+              in Aviation
             </span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-lg mx-auto lg:mx-0 animate-fadeIn delay-100">
-            Professional flight training and aviation education for aspiring
-            pilots. Take your career to new heights with DAMI Aviation Lanka.
+            Professional cabin crew training and aviation hospitality education.
+            Join the world's leading airlines with comprehensive certification from DAMI Aviation Lanka.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fadeIn delay-200">
             <button onClick={handleRegister} className="px-8 py-3 bg-[#B5054A] hover:bg-[#D4175C] text-white rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#B5054A]/30 font-medium text-lg group relative overflow-hidden">

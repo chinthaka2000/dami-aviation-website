@@ -26,7 +26,6 @@ export interface JobCategory {
   description: string;
   icon: React.ComponentType<any>;
   employers: string[];
-  salaryRange: string;
   opportunities: string[];
   growthRate: string;
   requirements: string[];
@@ -38,7 +37,6 @@ export interface CareerProgression {
   position: string;
   duration: string;
   description: string;
-  salaryRange: string;
   responsibilities: string[];
 }
 
@@ -73,7 +71,6 @@ export const jobCategories: JobCategory[] = [
       'Swiss International Air Lines',
       'Austrian Airlines'
     ],
-    salaryRange: 'LKR 80,000 - 150,000',
     growthRate: '15% annually',
     opportunities: [
       'Flight Attendant',
@@ -121,7 +118,6 @@ export const jobCategories: JobCategory[] = [
       'Helitours',
       'Aviation Consulting Firms'
     ],
-    salaryRange: 'LKR 60,000 - 120,000',
     growthRate: '8% annually',
     opportunities: [
       'Safety Inspector',
@@ -171,7 +167,6 @@ export const jobCategories: JobCategory[] = [
       'Airline GSA Companies',
       'Airport Retail Services'
     ],
-    salaryRange: 'LKR 45,000 - 80,000',
     growthRate: '10% annually',
     opportunities: [
       'Customer Service Agent',
@@ -223,7 +218,6 @@ export const jobCategories: JobCategory[] = [
       'International Travel Companies',
       'Luxury Resort Chains'
     ],
-    salaryRange: 'LKR 50,000 - 100,000',
     growthRate: '12% annually',
     opportunities: [
       'Resort Representative',
@@ -273,7 +267,6 @@ export const jobCategories: JobCategory[] = [
       'Aircraft Maintenance Organizations',
       'Fuel Service Providers'
     ],
-    salaryRange: 'LKR 40,000 - 75,000',
     growthRate: '7% annually',
     opportunities: [
       'Ramp Agent',
@@ -323,7 +316,6 @@ export const jobCategories: JobCategory[] = [
       'E-learning Platform Companies',
       'Consulting and Training Firms'
     ],
-    salaryRange: 'LKR 70,000 - 130,000',
     growthRate: '11% annually',
     opportunities: [
       'Cabin Crew Instructor',
@@ -367,7 +359,6 @@ export const careerProgression: CareerProgression[] = [
     position: 'Junior Cabin Crew',
     duration: '0-2 years',
     description: 'Start your aviation career with comprehensive training and mentorship from experienced crew members.',
-    salaryRange: 'LKR 60,000 - 80,000',
     responsibilities: [
       'Passenger safety and service delivery',
       'Emergency procedure implementation',
@@ -384,7 +375,6 @@ export const careerProgression: CareerProgression[] = [
     position: 'Senior Cabin Crew',
     duration: '2-5 years',
     description: 'Take on leadership roles and specialized responsibilities while mentoring new crew members.',
-    salaryRange: 'LKR 80,000 - 110,000',
     responsibilities: [
       'Leading cabin crew teams',
       'Training and mentoring junior staff',
@@ -401,7 +391,6 @@ export const careerProgression: CareerProgression[] = [
     position: 'Purser / Cabin Supervisor',
     duration: '5-8 years',
     description: 'Lead cabin crew teams and manage in-flight operations with full responsibility for passenger experience.',
-    salaryRange: 'LKR 110,000 - 140,000',
     responsibilities: [
       'Overall cabin management',
       'Crew scheduling and coordination',
@@ -418,7 +407,6 @@ export const careerProgression: CareerProgression[] = [
     position: 'Cabin Service Director',
     duration: '8+ years',
     description: 'Senior management roles in airline operations, training, and strategic planning for cabin services.',
-    salaryRange: 'LKR 140,000 - 200,000+',
     responsibilities: [
       'Strategic planning for cabin services',
       'Training program development',
@@ -492,31 +480,7 @@ export const industryTrends = {
   retirementAge: '55-60 years'
 };
 
-/**
- * Salary Benchmarks by Experience Level
- */
-export const salaryBenchmarks = {
-  'entry-level': {
-    local: 'LKR 45,000 - 70,000',
-    regional: 'LKR 80,000 - 120,000',
-    international: 'LKR 120,000 - 180,000'
-  },
-  'experienced': {
-    local: 'LKR 70,000 - 100,000',
-    regional: 'LKR 120,000 - 160,000',
-    international: 'LKR 180,000 - 250,000'
-  },
-  'senior': {
-    local: 'LKR 100,000 - 140,000',
-    regional: 'LKR 160,000 - 220,000',
-    international: 'LKR 250,000 - 350,000'
-  },
-  'management': {
-    local: 'LKR 140,000 - 200,000',
-    regional: 'LKR 220,000 - 300,000',
-    international: 'LKR 350,000 - 500,000+'
-  }
-};
+
 
 /**
  * Skills in High Demand
@@ -540,25 +504,21 @@ export const inDemandSkills = [
 export const geographicOpportunities = {
   'Middle East': {
     countries: ['UAE', 'Qatar', 'Saudi Arabia', 'Oman', 'Kuwait'],
-    averageSalary: 'USD 2,500 - 4,500',
     benefits: 'Tax-free income, accommodation, healthcare',
     culturalRequirements: 'Conservative dress code, cultural sensitivity'
   },
   'Asia Pacific': {
     countries: ['Singapore', 'Hong Kong', 'Malaysia', 'Thailand', 'Philippines'],
-    averageSalary: 'USD 2,000 - 3,500',
     benefits: 'Regional travel, career progression, training opportunities',
     culturalRequirements: 'English proficiency, cultural adaptability'
   },
   'Europe': {
     countries: ['Germany', 'Switzerland', 'Austria', 'Netherlands', 'UK'],
-    averageSalary: 'EUR 2,200 - 3,800',
     benefits: 'EU work rights, social security, career stability',
     culturalRequirements: 'European language skills, cultural integration'
   },
   'Americas': {
     countries: ['USA', 'Canada', 'Brazil', 'Mexico', 'Chile'],
-    averageSalary: 'USD 2,800 - 4,200',
     benefits: 'Career advancement, diverse routes, competitive benefits',
     culturalRequirements: 'English/Spanish proficiency, visa requirements'
   }
@@ -620,16 +580,7 @@ export const getRecommendedSkills = (careerLevel: string): string[] => {
   return skillMapping[careerLevel] || inDemandSkills;
 };
 
-/**
- * Get job opportunities by salary range
- */
-export const getJobOpportunitiesBySalary = (minSalary: number): JobCategory[] => {
-  return jobCategories.filter(category => {
-    const salaryRange = category.salaryRange;
-    const minSalaryFromRange = parseInt(salaryRange.split(' - ')[0].replace(/[^\d]/g, ''));
-    return minSalaryFromRange >= minSalary;
-  });
-};
+
 
 /**
  * Export all job opportunities as JobOpportunity interface format
@@ -639,7 +590,6 @@ export const getAllJobOpportunities = (): JobOpportunity[] => {
     title: category.title,
     description: category.description,
     employers: category.employers,
-    salaryRange: category.salaryRange,
     icon: category.icon.name || 'briefcase'
   }));
 };

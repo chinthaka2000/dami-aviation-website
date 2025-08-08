@@ -1,6 +1,83 @@
 import React, { useEffect, useRef, useState } from 'react';
-import lottie from 'lottie-web';
 import { CheckCircle } from 'lucide-react';
+
+// TypeScript interface for cabin crew benefits
+interface CabinCrewBenefit {
+  id: string;
+  emoji: string;
+  title: string;
+  description: string;
+}
+
+// Cabin crew benefits data array
+const cabinCrewBenefits: CabinCrewBenefit[] = [
+  {
+    id: 'international-course',
+    emoji: '✈️',
+    title: 'International Cabin Crew Course',
+    description: 'Empowering the Next Generation of Aviation Professionals with comprehensive training designed to meet global industry standards.'
+  },
+  {
+    id: 'safety-first-training',
+    emoji: '🛡️',
+    title: 'Safety-First Training Philosophy',
+    description: 'Master essential safety procedures, emergency protocols, and life-saving techniques with our industry-leading safety training program.'
+  },
+  {
+    id: 'experienced-instructors',
+    emoji: '👩‍✈️',
+    title: 'Internationally Experienced Instructors',
+    description: 'Learn from certified professionals with extensive global aviation experience and deep industry knowledge.'
+  },
+  {
+    id: 'online-theory-modules',
+    emoji: '💻',
+    title: 'Dynamic Online Theory Modules',
+    description: 'Access interactive online learning platforms with comprehensive theoretical knowledge and flexible study schedules.'
+  },
+  {
+    id: 'practical-training',
+    emoji: '🧪',
+    title: 'Intensive 2-Day Practical Training',
+    description: 'Hands-on workshop experience including fire drills, first aid training, water survival techniques, and emergency procedures.'
+  },
+  {
+    id: 'customized-learning',
+    emoji: '📈',
+    title: 'Customized Learning Experience',
+    description: 'Personalized training approach tailored to your individual learning style, pace, and career aspirations.'
+  },
+  {
+    id: 'global-certification',
+    emoji: '🌍',
+    title: 'Globally Recognized Certification',
+    description: 'Earn internationally accepted certification that opens doors to career opportunities with airlines worldwide.'
+  },
+  {
+    id: 'realistic-simulations',
+    emoji: '🎯',
+    title: 'Realistic Inflight Simulations',
+    description: 'Practice real-world scenarios in authentic cabin environments with state-of-the-art simulation technology.'
+  },
+  {
+    id: 'aviation-english',
+    emoji: '🗣️',
+    title: 'Aviation English & Communication Excellence',
+    description: 'Develop professional communication skills and aviation-specific English proficiency for international operations.'
+  },
+  {
+    id: 'grooming-etiquette',
+    emoji: '💼',
+    title: 'Grooming, Etiquette & Cultural Awareness',
+    description: 'Master professional presentation, international etiquette, and cultural sensitivity for diverse passenger interactions.'
+  },
+  {
+    id: 'airline-network',
+    emoji: '🤝',
+    title: 'Strong Airline Industry Network',
+    description: 'Benefit from our extensive connections with airlines, providing career opportunities, interview referrals, and industry insights.'
+  }
+];
 // Custom hook for counting animation
 const useCountAnimation = (end: number, duration: number = 2000) => {
   const [count, setCount] = useState(0);
@@ -55,50 +132,56 @@ const WhyChooseUsSection = () => {
     <div className="container mx-auto px-4 md:px-6 relative z-10">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B5054A] to-[#D4175C]">DAMI</span> Aviation
+          Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B5054A] to-[#D4175C]">DAMI</span> International Cabin Crew Course
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          We pride ourselves on providing the highest quality aviation
-          training with a focus on safety, technology, and student success.
+          We provide comprehensive cabin crew training that combines safety excellence,
+          international standards, and practical experience to prepare you for a successful
+          career in the aviation industry.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="animate-float">
-          <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-xl hover:shadow-[#B5054A]/10 hover:border-[#D4175C]/20 transition-all duration-500">
-            <img
-              src="https://res.cloudinary.com/dzz0qlqve/image/upload/v1754048688/DSC05812_copy_cgwrsq.jpg"
-              alt="Why Choose DAMI Aviation"
-              className="w-full h-[400px] object-cover rounded-xl border-2 border-[#D4175C]/30 shadow-2xl shadow-[#B5054A]/20 hover:border-[#D4175C]/60 hover:shadow-[#D4175C]/30 transition-all duration-500"
-            />
+        <div className="space-y-6">
+          <div className="animate-float">
+            <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-xl hover:shadow-[#B5054A]/10 hover:border-[#D4175C]/20 transition-all duration-500">
+              <img
+                src="https://res.cloudinary.com/dzz0qlqve/image/upload/v1754048688/DSC05812_copy_cgwrsq.jpg"
+                alt="DAMI Aviation Cabin Crew Training"
+                className="w-full h-[280px] object-cover rounded-xl border-2 border-[#D4175C]/30 shadow-2xl shadow-[#B5054A]/20 hover:border-[#D4175C]/60 hover:shadow-[#D4175C]/30 transition-all duration-500"
+              />
+            </div>
+          </div>
+          <div className="animate-float" style={{ animationDelay: '1s' }}>
+            <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-xl hover:shadow-[#B5054A]/10 hover:border-[#D4175C]/20 transition-all duration-500">
+              <img
+                src="https://res.cloudinary.com/dzz0qlqve/image/upload/v1753771763/DSC09425_yteepw.jpg"
+                alt="DAMI Aviation Professional Training Environment"
+                className="w-full h-[280px] object-cover rounded-xl border-2 border-[#D4175C]/30 shadow-2xl shadow-[#B5054A]/20 hover:border-[#D4175C]/60 hover:shadow-[#D4175C]/30 transition-all duration-500"
+              />
+            </div>
+          </div>
+          <div className="animate-float" style={{ animationDelay: '2s' }}>
+            <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-xl hover:shadow-[#B5054A]/10 hover:border-[#D4175C]/20 transition-all duration-500">
+              <img
+                src="https://res.cloudinary.com/dzz0qlqve/image/upload/v1753771691/DSC06046_noijka.jpg"
+                alt="DAMI Aviation Cabin Crew Training Facilities"
+                className="w-full h-[280px] object-cover rounded-xl border-2 border-[#D4175C]/30 shadow-2xl shadow-[#B5054A]/20 hover:border-[#D4175C]/60 hover:shadow-[#D4175C]/30 transition-all duration-500"
+              />
+            </div>
           </div>
         </div>
         <div>
           <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-xl hover:shadow-[#B5054A]/20 transition-all duration-500">
             <div className="space-y-6">
-              <ComparisonItem title="Safety First Approach">
-                Our rigorous safety protocols and modern aircraft fleet ensure
-                the highest standards of safety throughout your training.
-              </ComparisonItem>
-              <ComparisonItem title="Internationally Certified Instructors">
-                Learn from experienced pilots with thousands of flight hours
-                and international certifications.
-              </ComparisonItem>
-              <ComparisonItem title="State-of-the-Art Simulators">
-                Train on the latest full-motion simulators that replicate
-                real-world flying conditions and scenarios.
-              </ComparisonItem>
-              <ComparisonItem title="Personalized Training Plans">
-                We tailor our programs to match your learning pace and career
-                goals, ensuring optimal progress.
-              </ComparisonItem>
-              <ComparisonItem title="Global Industry Connections">
-                Our partnerships with airlines and aviation companies provide
-                career opportunities for graduates.
-              </ComparisonItem>
-              <ComparisonItem title="Comprehensive Ground School">
-                In-depth theoretical knowledge combined with practical
-                application for a well-rounded education.
-              </ComparisonItem>
+              {cabinCrewBenefits.map((benefit) => (
+                <ComparisonItem
+                  key={benefit.id}
+                  emoji={benefit.emoji}
+                  title={benefit.title}
+                >
+                  {benefit.description}
+                </ComparisonItem>
+              ))}
             </div>
           </div>
         </div>
@@ -134,16 +217,25 @@ const WhyChooseUsSection = () => {
   </section>;
 };
 interface ComparisonItemProps {
+  emoji?: string;
   title: string;
   children: React.ReactNode;
 }
 
 const ComparisonItem: React.FC<ComparisonItemProps> = ({
+  emoji,
   title,
   children
 }) => <div className="group hover:transform hover:translate-x-2 transition-transform duration-300">
     <div className="flex items-start">
-      <CheckCircle className="text-[#D4175C] mt-1 mr-3 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" size={20} />
+      <div className="flex items-center mt-1 mr-3 flex-shrink-0">
+        {emoji && (
+          <span className="text-xl mr-2 group-hover:scale-110 transition-transform duration-300">
+            {emoji}
+          </span>
+        )}
+        <CheckCircle className="text-[#D4175C] group-hover:scale-110 transition-transform duration-300" size={20} />
+      </div>
       <div>
         <h4 className="text-white font-semibold text-lg mb-1 group-hover:text-[#D4175C] transition-colors duration-300">
           {title}

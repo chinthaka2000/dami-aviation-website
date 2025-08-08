@@ -153,13 +153,13 @@ const Header = () => {
   };
 
 
-  return <header className={`fixed w-full z-50 transition-all duration-500 min-h-[70px] md:min-h-[80px] ${isScrolled ? 'bg-[#0a1929]/90 backdrop-blur-md py-2 shadow-lg' : 'bg-transparent py-3'} ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+  return <header className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-[#0a1929]/95 backdrop-blur-md py-3 shadow-lg border-b border-[#D4175C]/20' : 'bg-[#0a1929]/85 backdrop-blur-sm py-4 border-b border-[#D4175C]/15'} ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
     <div className="container mx-auto px-4 md:px-6 h-full">
       <div className="flex items-center justify-between h-full">
         <Link to="/" className="flex items-center">
-          <div className="h-14 md:h-18 flex items-center">
+          <div className="h-12 md:h-16 flex items-center">
             <img
-              src="/Logo.png"
+              src="https://res.cloudinary.com/dzz0qlqve/image/upload/v1754673138/Logo_n456gd.ico"
               alt="Dami Aviation Logo"
               className="h-full w-auto object-contain"
             />

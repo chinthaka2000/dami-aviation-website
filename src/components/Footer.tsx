@@ -47,16 +47,16 @@ const Footer = () => {
             {/* Brand */}
             <div>
               <div className="mb-6">
-                <Link to="/" className="flex items-center group">
-                  <span className="text-2xl font-bold text-white group-hover:scale-105 transition-transform duration-300">
-                    DAMI <span className="text-[#D4175C]">Aviation</span>
+                <Link to="/" className="flex flex-col group">
+                  <span className="text-xl font-bold text-white group-hover:scale-105 transition-transform duration-300 mb-2">
+                    DAMI <span className="text-[#D4175C]">Aviation</span> Lanka (Pvt) Ltd
                   </span>
+                  <p className="text-sm text-gray-300 leading-relaxed">
+                    A legally registered aviation training provider dedicated to excellence in preparing aspiring cabin crew and ground staff for distinguished careers with leading international airlines. Through comprehensive, industry-aligned programs and continuous career support, we empower our students with the expertise, confidence, and professionalism essential for success in the global aviation sector.
+                  </p>
                 </Link>
               </div>
-              <p className="text-gray-300 mb-6">
-                Professional training for cabin crew and aviation ground staff.
-                We prepare aspiring individuals for global careers with leading airlines.
-              </p>
+
               <div className="flex space-x-4">
                 <SocialIcon icon={<Facebook size={20} />} href="https://www.facebook.com/profile.php?id=100093489771446" />
 
@@ -76,15 +76,18 @@ const Footer = () => {
                 <AirlineLink>Emirates</AirlineLink>
                 <AirlineLink>Etihad Airways</AirlineLink>
                 <AirlineLink>FlyDubai</AirlineLink>
-                <AirlineLink>Qantas</AirlineLink>
+                <AirlineLink>Air Arabia
+
+                </AirlineLink>
                 <AirlineLink>SriLankan Airlines</AirlineLink>
+                <AirlineLink>FitsAir</AirlineLink>
 
               </ul>
             </div>
 
             {/* Training Programs */}
             <div>
-              <h4 className="text-white font-bold text-lg mb-6">Training Programs</h4>
+              <h4 className="text-white font-bold text-lg mb-6">Steering You Toward Aviation Success</h4>
               <ul className="space-y-3">
                 <FooterLink onClick={() => scrollToSection('programs')}>Airline Cabin Crew Training</FooterLink>
                 <FooterLink onClick={() => scrollToSection('programs')}>Airport Service Agent</FooterLink>

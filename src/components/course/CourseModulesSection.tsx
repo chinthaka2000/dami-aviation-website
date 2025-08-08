@@ -146,19 +146,19 @@ const CourseModulesSection: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-[#D4175C] text-2xl font-bold mb-2">
-                  {activeTab === 'theoretical' ? '10+' : '5+'}
+                  {activeTab === 'theoretical' ? '10+' : '6+'}
                 </div>
                 <div className="text-white font-semibold">Modules</div>
                 <div className="text-gray-400 text-sm">Comprehensive Coverage</div>
               </div>
               <div className="text-center">
                 <div className="text-[#D4175C] text-2xl font-bold mb-2">
-                  {activeTab === 'theoretical' ? '100+' : '2'}
+                  {activeTab === 'theoretical' ? '80+' : '2'}
                 </div>
                 <div className="text-white font-semibold">
                   {activeTab === 'theoretical' ? 'Hours' : 'Days'}
                 </div>
-                <div className="text-gray-400 text-sm">Training Duration</div>
+                <div className="text-gray-400 text-sm">Course Duration</div>
               </div>
               <div className="text-center">
                 <div className="text-[#D4175C] text-2xl font-bold mb-2">DAMI</div>

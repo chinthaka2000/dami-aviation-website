@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import CoursePage from './pages/CoursePage';
-import AboutPage from './pages/AboutPage';
+
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
@@ -20,7 +20,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/course" element={<CoursePage />} />
-          <Route path="/about" element={<AboutPage />} />
+
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/other-services" element={<OtherServicesPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />

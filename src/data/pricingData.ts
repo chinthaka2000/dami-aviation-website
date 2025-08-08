@@ -50,7 +50,12 @@ export const paymentPlans = [
     name: 'Monthly Plan',
     description: 'Pay in 3 monthly installments',
     discount: 0,
-    installments: 3
+    installments: 3,
+    customSchedule: [
+      { month: 1, amount: 20000, mandatory: true },
+      { month: 2, amount: 15000, mandatory: false },
+      { month: 3, amount: 15000, mandatory: false }
+    ]
   }
 ];
 
@@ -59,12 +64,13 @@ export const paymentPlans = [
  */
 export const feeBreakdown = {
   registrationFee: 1000,
-  tuitionFee: 40000,
+  tuitionFee: 15000,
+  programmeFee: 25000,
   materialsFee: 5000,
-  certificationFee: 3000,
-  practicalTrainingFee: 2000,
+  certificationFee: 5000,
   total: 50000,
-  currency: 'Rs'
+  currency: 'Rs',
+  certificatesIncluded: 5
 };
 
 /**

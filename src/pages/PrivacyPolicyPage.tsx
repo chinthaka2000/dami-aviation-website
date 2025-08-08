@@ -155,7 +155,6 @@ interface PolicySectionProps {
   title: string;
   content: string[];
 }
-
 const PolicySection: React.FC<PolicySectionProps> = ({ icon, title, content }) => {
   return (
     <div className="bg-[#0f2942]/50 backdrop-blur-sm border border-gray-700/30 rounded-xl p-8">

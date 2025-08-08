@@ -177,10 +177,7 @@ const EntryRequirementsSection: React.FC = () => {
                     <div className="w-2 h-2 bg-[#D4175C] rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span>Medical fitness certificate</span>
                   </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-[#D4175C] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Valid passport with 2+ years validity</span>
-                  </li>
+
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-[#D4175C] rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span>Clear criminal background check</span>
@@ -509,6 +506,19 @@ const EntryRequirementsSection: React.FC = () => {
                         >
                           Apply Now
                         </button>
+                      )}
+                      {getOverallStatus() === 'fail' && (
+                        <div className="mt-4">
+                          <p className="text-gray-300 mb-4 text-sm">
+                            Don't meet some requirements? Our admissions team can help you understand your options and guide you through alternative pathways.
+                          </p>
+                          <button
+                            onClick={handleRegister}
+                            className="px-6 py-3 bg-transparent border-2 border-[#EF4444] text-[#EF4444] font-semibold rounded-full hover:bg-[#EF4444] hover:text-white transition-all duration-300"
+                          >
+                            Send Us a Message
+                          </button>
+                        </div>
                       )}
                     </div>
                   </div>

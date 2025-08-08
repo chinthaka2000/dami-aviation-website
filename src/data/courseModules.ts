@@ -32,7 +32,7 @@ export const theoreticalModules: CourseModule[] = [
     title: 'Aviation History',
     type: 'theoretical',
     description: 'Comprehensive introduction to aviation history, airline operations, and fundamental aviation concepts. This foundational module covers the evolution of aviation and essential industry knowledge.',
-    duration: 'Week 1',
+    duration: '1st Week',
     icon: Plane,
     topics: [
       'Information about aviation history',
@@ -54,7 +54,7 @@ export const theoreticalModules: CourseModule[] = [
     title: 'Cabin Crew Member',
     type: 'theoretical',
     description: 'Understanding the cabin crew profession, responsibilities, and the essential skills required for success in the aviation industry.',
-    duration: 'Week 2',
+    duration: '2nd Week',
     icon: Users,
     topics: [
       'Cabin crew profession',
@@ -71,7 +71,7 @@ export const theoreticalModules: CourseModule[] = [
     title: 'Passenger Handling',
     type: 'theoretical',
     description: 'Comprehensive passenger service training covering all aspects of passenger interaction, special needs handling, and conflict resolution.',
-    duration: 'Week 3',
+    duration: ' 3rd Week',
     icon: UserCheck,
     topics: [
       'Passenger & passenger service',
@@ -89,7 +89,7 @@ export const theoreticalModules: CourseModule[] = [
     title: 'Enhancing Communication & Interpersonal Skills',
     type: 'theoretical',
     description: 'Essential communication skills, teamwork, and leadership development for effective cabin crew performance.',
-    duration: 'Week 4',
+    duration: '4th Week',
     icon: MessageCircle,
     topics: [
       'Communication',
@@ -107,7 +107,7 @@ export const theoreticalModules: CourseModule[] = [
     title: 'Inflight Service and Hospitality',
     type: 'theoretical',
     description: 'Comprehensive training in inflight service delivery, food and beverage operations, and creating exceptional passenger experiences.',
-    duration: 'Week 5',
+    duration: '5th Week',
     icon: Coffee,
     topics: [
       'Introduction',
@@ -127,7 +127,7 @@ export const theoreticalModules: CourseModule[] = [
     title: 'Passenger Safety and Emergency',
     type: 'theoretical',
     description: 'Critical safety protocols, emergency procedures, and fire safety training essential for cabin crew operations.',
-    duration: 'Week 6',
+    duration: '6th Week',
     icon: Shield,
     topics: [
       'Passenger safety & aircraft safety',
@@ -147,7 +147,7 @@ export const theoreticalModules: CourseModule[] = [
     title: 'Aviation Health and Medical Procedures',
     type: 'theoretical',
     description: 'Medical emergency response, first aid procedures, and health management protocols for cabin crew.',
-    duration: 'Week 7',
+    duration: '7th Week',
     icon: Heart,
     topics: [
       'Basic first aid and medical emergency',
@@ -165,7 +165,7 @@ export const theoreticalModules: CourseModule[] = [
     title: 'Aviation Security and Dangerous Goods',
     type: 'theoretical',
     description: 'Comprehensive security protocols, dangerous goods regulations, and threat management in aviation.',
-    duration: 'Week 8',
+    duration: '8th & 9th Week',
     icon: AlertTriangle,
     topics: [
       'Security & aviation security',
@@ -193,7 +193,7 @@ export const theoreticalModules: CourseModule[] = [
     title: 'Career Development and Job Preparation',
     type: 'theoretical',
     description: 'Professional development, job application skills, and career advancement strategies in the aviation industry.',
-    duration: 'Week 9',
+    duration: '9th Week',
     icon: Briefcase,
     topics: [
       'Job application states and resume writing',
@@ -207,12 +207,13 @@ export const theoreticalModules: CourseModule[] = [
     title: 'Final Assessment and Certification',
     type: 'theoretical',
     description: 'Comprehensive review and assessment of all course materials, leading to course completion certification.',
-    duration: 'Week 10',
+    duration: '11th & 12th Week',
     icon: GraduationCap,
     topics: [
       'Review of key concepts and knowledge learned throughout the course',
       'Final assessment to evaluate understanding and retention',
-      'Course completion certificate provided to successful participants'
+      'Course completion certificate provided to successful participants',
+
     ]
   }
 ];
@@ -227,7 +228,7 @@ export const practicalModules: CourseModule[] = [
     title: 'Fire Safety & Rescue Training',
     type: 'practical',
     description: 'Comprehensive fire safety training covering theoretical knowledge and hands-on practical experience with fire extinguishers and rescue operations. Led by certified instructor Mr. Chaminda Nuragodage.',
-    duration: '3 hours (Day 1)',
+    duration: '04hrs+ (Day 1)',
     icon: Shield,
     topics: [
       'Basics of fire safety and prevention strategies',
@@ -246,8 +247,8 @@ export const practicalModules: CourseModule[] = [
     id: 'physical-2',
     title: 'Basic First Aid & CPR Training',
     type: 'practical',
-    description: 'Essential first aid and emergency medical response training conducted by Dr. Sandaruwan Liyanage. Covers comprehensive medical emergency procedures and life-saving techniques.',
-    duration: '2 hours (Day 1)',
+    description: 'Essential first aid and emergency medical response training conducted by Dr. Sandaruwan Liyanage & Mrs Anoma Herath. Covers comprehensive medical emergency procedures and life-saving techniques.',
+    duration: '2.5hrs+ (Day 1)',
     icon: Heart,
     topics: [
       'Fundamental principles of first aid and emergency response',
@@ -269,7 +270,7 @@ export const practicalModules: CourseModule[] = [
     title: 'Professional Grooming & Appearance Standards',
     type: 'practical',
     description: 'Professional grooming and appearance training led by Miss Sithara Dilrukshi. Focus on international aviation standards for personal presentation and professional image.',
-    duration: '1.5 hours (Day 1)',
+    duration: '03hrs+ hours (Day 1)',
     icon: Sparkles,
     topics: [
       'Importance of professional appearance in aviation industry',
@@ -289,7 +290,7 @@ export const practicalModules: CourseModule[] = [
     title: 'Physical Fitness Programme',
     type: 'practical',
     description: 'Comprehensive physical fitness training designed specifically for aviation professionals. Conducted by Mr. Lahiru Dilshan, focusing on health, endurance, and physical requirements for cabin crew.',
-    duration: '1.5 hours (Day 2)',
+    duration: '1.5hrs+ (Day 2)',
     icon: Dumbbell,
     topics: [
       'Importance of physical fitness for cabin crew professionals',
@@ -309,7 +310,7 @@ export const practicalModules: CourseModule[] = [
     title: 'Water Survival Training',
     type: 'practical',
     description: 'Essential water survival skills training conducted by Mr. Mahesh Gunarathna. Comprehensive training in water safety, survival techniques, and emergency procedures for aviation professionals.',
-    duration: '3 hours (Day 2)',
+    duration: '03hrs+ (Day 2)',
     icon: Waves,
     topics: [
       'Introduction to water survival and safety principles',
@@ -324,6 +325,26 @@ export const practicalModules: CourseModule[] = [
       'Life raft deployment and boarding procedures',
       'Emergency equipment usage in water survival',
       'Rescue coordination and communication in water emergencies'
+    ]
+  },
+  {
+    id: 'physical-6',
+    title: 'Cabin Crew Interview Training',
+    type: 'practical',
+    description: 'Unlock your potential and confidently step into the world of aviation with our exclusive Cabin Crew Interview Training, meticulously designed and delivered by industry specialist Damith Isuru. This comprehensive program prepares aspiring cabin crew members to meet and exceed the rigorous standards of leading global airlines.',
+    duration: '03hrs+',
+    icon: Briefcase,
+    topics: [
+      'Deep dive into airline recruitment processes and selection criteria specific to cabin crew roles',
+      'Crafting impactful personal introductions and creating memorable first impressions',
+      'Mastering competency-based and situational interview techniques aligned with international airline expectations',
+      'Polishing communication skills — projecting confidence, warmth, and professionalism in every interaction',
+      'Adhering to global grooming and presentation standards essential for cabin crew success',
+      'Intensive, real-time mock interviews with detailed, personalized feedback for performance enhancement',
+      'Navigating group exercises, role-playing scenarios, and customer service simulations with poise',
+      'Proven strategies to manage interview stress and maintain composure under pressure',
+      'Expert guidance on perfecting your CV, cover letter, and essential documentation',
+      'Insider insights and best practices for excelling in both virtual and in-person interviews'
     ]
   }
 ];

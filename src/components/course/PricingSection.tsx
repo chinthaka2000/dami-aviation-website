@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { CreditCard, Calculator, CheckCircle, Info, Star } from 'lucide-react';
 import PricingCard from '../ui/PricingCard';
 import { aviationCoursePricing, paymentPlans, feeBreakdown, formatCurrency, calculateInstallment } from '../../data/pricingData';
-import { handleRegister as handleWhatsAppRegister } from '../../utils/whatsapp';
 
 const PricingSection: React.FC = () => {
   const [selectedPlan, setSelectedPlan] = useState(0);
@@ -87,17 +86,35 @@ const PricingSection: React.FC = () => {
                 <p className="text-gray-300 text-sm mb-4">{plan.description}</p>
 
                 <div className="space-y-2">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-400">Installments:</span>
-                    <span className="text-white">{plan.installments}</span>
-                  </div>
+                  {plan.customSchedule ? (
+                    <div className="space-y-2">
+                      {plan.customSchedule.map((schedule, idx) => (
+                        <div key={idx} className="flex justify-between text-sm">
+                          <span className="text-gray-400">
+                            {schedule.month === 1 ? '1st' : schedule.month === 2 ? '2nd' : '3rd'} Month:
+                            {schedule.mandatory && <span className="text-[#D4175C] ml-1">(Mandatory)</span>}
+                          </span>
+                          <span className="text-[#D4175C] font-semibold">
+                            {formatCurrency(schedule.amount)}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <>
+                      <div className="flex justify-between text-sm">
+                        <span className="text-gray-400">Installments:</span>
+                        <span className="text-white">{plan.installments}</span>
+                      </div>
 
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-400">Amount per installment:</span>
-                    <span className="text-[#D4175C] font-semibold">
-                      {formatCurrency(calculateInstallment(coursePricing.totalFee, plan.installments, plan.discount))}
-                    </span>
-                  </div>
+                      <div className="flex justify-between text-sm">
+                        <span className="text-gray-400">Amount per installment:</span>
+                        <span className="text-[#D4175C] font-semibold">
+                          {formatCurrency(calculateInstallment(coursePricing.totalFee, plan.installments, plan.discount))}
+                        </span>
+                      </div>
+                    </>
+                  )}
 
                   {plan.discount > 0 && (
                     <div className="flex justify-between text-sm">
@@ -133,16 +150,19 @@ const PricingSection: React.FC = () => {
                   <span className="text-white">{formatCurrency(feeBreakdown.tuitionFee)}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-300">Training Materials</span>
+                  <span className="text-gray-300">Programme</span>
+                  <span className="text-white">{formatCurrency(feeBreakdown.programmeFee)}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Material</span>
                   <span className="text-white">{formatCurrency(feeBreakdown.materialsFee)}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-300">DAMI Certification</span>
+                  <span className="text-gray-300">Certification</span>
                   <span className="text-white">{formatCurrency(feeBreakdown.certificationFee)}</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-300">Practical Training</span>
-                  <span className="text-white">{formatCurrency(feeBreakdown.practicalTrainingFee)}</span>
+                <div className="text-sm text-gray-400 mt-2 mb-4">
+                  * {feeBreakdown.certificatesIncluded} certificates included
                 </div>
                 <div className="border-t border-gray-700/30 pt-3 mt-3">
                   <div className="flex justify-between text-lg font-semibold">
