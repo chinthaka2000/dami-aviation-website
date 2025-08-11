@@ -4,6 +4,13 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "vite",
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/our-team",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

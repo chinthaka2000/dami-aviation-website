@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://damiaviation.lk/sitemap.xml
+
+# Prioritize homepage
+Crawl-delay: 1
+
+# Allow all pages
+Allow: /course
+Allow: /our-team
+Allow: /gallery
+Allow: /other-services
+Allow: /privacy-policy
+Allow: /terms-of-service
+Allow: /sitemap
