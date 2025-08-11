@@ -66,8 +66,8 @@ const AnimatedPhotoSlideshow = () => {
             <div
               key={index}
               className={`absolute inset-0 transition-all duration-1000 ease-in-out ${index === currentImageIndex
-                  ? 'opacity-100 scale-100'
-                  : 'opacity-0 scale-105'
+                ? 'opacity-100 scale-100'
+                : 'opacity-0 scale-105'
                 }`}
             >
               <img
@@ -94,8 +94,8 @@ const AnimatedPhotoSlideshow = () => {
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentImageIndex
-                    ? 'bg-[#D4175C] scale-110'
-                    : 'bg-white/50 hover:bg-white/70'
+                  ? 'bg-[#D4175C] scale-110'
+                  : 'bg-white/50 hover:bg-white/70'
                   }`}
               />
             ))}
@@ -126,9 +126,7 @@ const AnimatedPhotoSlideshow = () => {
         </div>
 
         <div className="text-center mt-6">
-          <p className="text-gray-300 text-sm">
-            Slideshow automatically changes every 4 seconds • Click dots or arrows to navigate
-          </p>
+
         </div>
       </div>
     </div>

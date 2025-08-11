@@ -9,6 +9,7 @@ import TermsOfServicePage from './pages/TermsOfServicePage';
 import SitemapPage from './pages/SitemapPage';
 import GalleryPage from './pages/GalleryPage';
 import OtherServicesPage from './pages/OtherServicesPage';
+import OurTeamPage from './pages/OurTeamPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import CloudinaryTest from './components/CloudinaryTest';
@@ -21,6 +22,7 @@ export function App() {
           <Route path="/" element={<Home />} />
           <Route path="/course" element={<CoursePage />} />
 
+          <Route path="/our-team" element={<OurTeamPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/other-services" element={<OtherServicesPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />

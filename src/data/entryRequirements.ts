@@ -21,7 +21,7 @@ export const entryRequirements: EntryRequirement[] = [
     description: 'Age limits for enrollment in the aviation cabin crew training program.',
     icon: 'Calendar',
     criteria: [
-      'Age between 18-26 years at the time of enrollment',
+      'Age between 16-27 years at the time of enrollment',
       'Age verification through valid government-issued identification',
       'Must maintain age eligibility throughout the course duration'
     ]
@@ -33,8 +33,8 @@ export const entryRequirements: EntryRequirement[] = [
     icon: 'GraduationCap',
     criteria: [
       'Successful completion of GCE O/L with 6 passes in one sitting',
-      'Minimum 3 credit passes (including English credit is advantageous)',
-      'Proficiency in English (both spoken and written)',
+      'Minimum 3 credit passes',
+      'English credit pass in any sitting',
       'Additional language skills are advantageous',
       'Academic transcripts and certificates must be verified'
     ]
@@ -50,7 +50,7 @@ export const entryRequirements: EntryRequirement[] = [
       'Weight proportionate to height, meeting BMI standards',
       'Good overall health with ability to pass medical examination',
       'Well-groomed and professional appearance',
-      'No visible tattoos or piercings while in uniform'
+      'No visible tattoos,Scars or piercings while in uniform'
     ]
   },
   {
@@ -72,7 +72,7 @@ export const entryRequirements: EntryRequirement[] = [
     description: 'Legal requirements and travel documentation needed for international aviation.',
     icon: 'User',
     criteria: [
-      'Valid passport with no travel restrictions',
+      'Valid passport but not mandatory',
       'Ability to obtain necessary visas for international travel',
       'Clear criminal record subject to thorough background checks',
       'Professional references may be required',
@@ -134,8 +134,8 @@ export const getAllEntryRequirements = (): EntryRequirement[] => {
  */
 export const requirementValidationRules = {
   age: {
-    min: 18,
-    max: 26,
+    min: 16,
+    max: 27,
     validator: (age: number) => age >= 18 && age <= 26
   },
   height: {

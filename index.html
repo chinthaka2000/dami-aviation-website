@@ -3,8 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/ico"
-    href="https://res.cloudinary.com/dzz0qlqve/image/upload/v1754683442/Dp_ph4fev.png" />
+  <!-- Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/favicon_io/site.webmanifest">
+  <link rel="shortcut icon" href="/favicon_io/favicon.ico">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary Meta Tags -->
@@ -46,25 +51,82 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Structured Data for Organization Logo -->
+  <!-- Enhanced Structured Data for Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["Organization", "EducationalOrganization"],
     "name": "DAMI Aviation Lanka (Pvt) Ltd",
-    "alternateName": "DAMI Aviation",
+    "alternateName": ["DAMI Aviation", "Dami Aviation Institute"],
     "url": "https://damiaviation.lk",
-    "logo": "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754683442/Dp_ph4fev.png",
-    "image": "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754683442/Dp_ph4fev.png",
-    "description": "Leading aviation training institute offering comprehensive cabin crew, flight attendant, and aviation professional courses in Sri Lanka.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754683442/Dp_ph4fev.png",
+      "width": 512,
+      "height": 512
+    },
+    "image": [
+      "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754683442/Dp_ph4fev.png",
+      "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754673138/Logo_n456gd.ico"
+    ],
+    "description": "Leading aviation training institute in Sri Lanka offering comprehensive cabin crew, flight attendant, and aviation professional courses. Providing hands-on training with experienced industry professionals.",
+    "foundingDate": "2020",
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "LK"
+      "addressCountry": "LK",
+      "addressRegion": "Western Province"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service"
-    }
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Sinhala"]
+      },
+      {
+        "@type": "ContactPoint",
+        "contactType": "admissions",
+        "availableLanguage": ["English", "Sinhala"]
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/damiaviation",
+      "https://www.instagram.com/damiaviation",
+      "https://www.linkedin.com/company/dami-aviation"
+    ],
+    "serviceArea": {
+      "@type": "Country",
+      "name": "Sri Lanka"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Aviation Training Courses",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Course",
+            "name": "Cabin Crew Training Program",
+            "description": "Comprehensive cabin crew training with practical experience"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Course",
+            "name": "Flight Attendant Course",
+            "description": "Professional flight attendant certification program"
+          }
+        }
+      ]
+    },
+    "knowsAbout": [
+      "Aviation Training",
+      "Cabin Crew Training",
+      "Flight Attendant Training",
+      "Aviation Safety",
+      "Customer Service Training",
+      "Emergency Procedures"
+    ]
   }
   </script>
 </head>

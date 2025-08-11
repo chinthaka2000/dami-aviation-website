@@ -174,9 +174,19 @@ const Header = () => {
             Training
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#D4175C] transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <NavLink active={activeLink === 'testimonials'} onClick={() => handleNavigation('testimonials')}>
-            Testimonials
-          </NavLink>
+          <a
+            href="https://lms.damiaviation.lk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-200 hover:text-[#D4175C] transition-all duration-300 font-medium relative group"
+          >
+            LMS Portal
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#D4175C] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <Link to="/our-team" className="text-gray-200 hover:text-[#D4175C] transition-all duration-300 font-medium relative group">
+            Our Team
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#D4175C] transition-all duration-300 group-hover:w-full"></span>
+          </Link>
           <Link to="/gallery" className="text-gray-200 hover:text-[#D4175C] transition-all duration-300 font-medium relative group">
             Gallery
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#D4175C] transition-all duration-300 group-hover:w-full"></span>
@@ -249,14 +259,37 @@ const Header = () => {
             <span className="text-[#D4175C]">→</span>
           </Link>
 
-          <EnhancedMobileNavLink
-            active={activeLink === 'testimonials'}
-            onClick={() => handleNavigation('testimonials')}
-            icon="⭐"
-            description="Student reviews & feedback"
+          <a
+            href="https://lms.damiaviation.lk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-between bg-[#0f2942]/30 hover:bg-[#0f2942]/50 rounded-xl p-4 text-gray-200 font-medium transition-all duration-300 hover:text-[#D4175C] border border-transparent hover:border-[#D4175C]/30"
+            onClick={() => setIsMenuOpen(false)}
           >
-            Testimonials
-          </EnhancedMobileNavLink>
+            <div className="flex items-center gap-3">
+              <span className="text-lg">💻</span>
+              <div>
+                <div className="font-medium">LMS Portal</div>
+                <div className="text-xs text-gray-400">Access your learning dashboard</div>
+              </div>
+            </div>
+            <span className="text-[#D4175C]">→</span>
+          </a>
+
+          <Link
+            to="/our-team"
+            className="flex items-center justify-between bg-[#0f2942]/30 hover:bg-[#0f2942]/50 rounded-xl p-4 text-gray-200 font-medium transition-all duration-300 hover:text-[#D4175C] border border-transparent hover:border-[#D4175C]/30"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-lg">👥</span>
+              <div>
+                <div className="font-medium">Our Team</div>
+                <div className="text-xs text-gray-400">Meet our aviation experts</div>
+              </div>
+            </div>
+            <span className="text-[#D4175C]">→</span>
+          </Link>
 
           <Link
             to="/gallery"
