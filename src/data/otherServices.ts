@@ -11,158 +11,256 @@ export interface OtherService {
   price: number;
   currency: string;
   icon: string;
-  category: 'exam-prep' | 'career-services' | 'consultation' | 'documents';
+  category:
+    | "exam-prep"
+    | "career-services"
+    | "consultation"
+    | "documents"
+    | "packages";
   whatsappMessage: string;
   popular?: boolean;
 }
 
 export const otherServices: OtherService[] = [
   {
-    id: 'airport-service-agent-exam',
-    title: 'Airport Service Agent Exam - Special Assessment Pack',
-    description: 'Comprehensive exam preparation package for Airport Service Agent certification with extensive question bank and detailed answers.',
+    id: "cv-800",
+    title: "Professional CV Creation Service (Colour Coded)",
+    description:
+      "Visually striking, colour-coded CV tailored for aviation industry roles, highlighting objectives, skills, and interests.",
     features: [
-      '1500+ MCQ questions with detailed answers',
-      '20 structural questions with comprehensive solutions',
-      '20 essay writing samples with model answers',
-      'Updated syllabus coverage',
-      'Practice test simulations',
-      'Performance tracking and analysis',
-      'Expert tips and strategies',
-      'Digital format for easy access'
+      "Colour-coded sections (Objectives, Skills, Interests)",
+      "Aviation industry-optimized format",
+      "Professional design & ATS-friendly keywords",
+      "Multiple formats (PDF, Word)",
+      "Cover letter template included",
+      "2 rounds of revisions",
+      "48-hour delivery",
+      "Reviewed by aviation industry experts",
     ],
-    price: 3000,
-    currency: 'Rs',
-    icon: '📋',
-    category: 'exam-prep',
-    whatsappMessage: 'Hi! I\'m interested in the Airport Service Agent Exam Special Assessment Pack (Rs. 3000). Please provide more details.',
-    popular: true
+    price: 800,
+    currency: "Rs",
+    icon: "📄",
+    category: "career-services",
+    whatsappMessage:
+      "Hi! I'm interested in a professionally designed, colour-coded CV for aviation positions (Rs. 800). Please assist me.",
   },
   {
-    id: 'cv-creation-service',
-    title: 'Professional CV Creation Service',
-    description: 'Get a professionally crafted CV tailored for aviation industry positions that highlights your skills and experience effectively.',
+    id: "cover-300",
+    title: "Custom Cover Letter Writing (Colour Themed)",
+    description:
+      "Personalized, professionally written cover letter with matching colour themes, highlighting your objectives, skills, and interests.",
     features: [
-      'Aviation industry-specific CV format',
-      'Professional design and layout',
-      'Keyword optimization for ATS systems',
-      'Multiple format options (PDF, Word)',
-      'Cover letter template included',
-      '2 rounds of revisions',
-      '48-hour delivery',
-      'Industry expert review'
+      "Colour-coded design (Objectives, Skills, Interests)",
+      "Tailored for aviation job applications",
+      "Professional structure & impact",
+      "ATS-friendly optimization",
+      "Editable Word & PDF formats",
     ],
-    price: 1500,
-    currency: 'Rs',
-    icon: '📄',
-    category: 'career-services',
-    whatsappMessage: 'Hi! I need help creating a professional CV for aviation industry positions. Please assist me with your CV creation service.'
+    price: 300,
+    currency: "Rs",
+    icon: "📝",
+    category: "career-services",
+    whatsappMessage:
+      "Hi! I'm interested in a custom aviation cover letter (Rs. 300). Please provide more details.",
   },
   {
-    id: 'interview-preparation',
-    title: 'Aviation Interview Preparation',
-    description: 'Comprehensive interview coaching for aviation positions including mock interviews and personalized feedback.',
+    id: "cv-cover-bundle",
+    title: "CV + Cover Letter Bundle",
+    description:
+      "Get both a professional CV and matching cover letter at a discounted price.",
     features: [
-      'One-on-one mock interview sessions',
-      'Common aviation interview questions',
-      'Behavioral interview techniques',
-      'Technical knowledge assessment',
-      'Confidence building exercises',
-      'Body language and presentation tips',
-      'Industry-specific scenarios',
-      'Follow-up support'
-    ],
-    price: 2500,
-    currency: 'Rs',
-    icon: '🎤',
-    category: 'career-services',
-    whatsappMessage: 'Hi! I\'m interested in aviation interview preparation coaching. Please provide details about your interview preparation service.'
-  },
-  {
-    id: 'career-consultation',
-    title: 'Aviation Career Consultation',
-    description: 'Personalized career guidance and planning session with aviation industry experts to help you choose the right career path.',
-    features: [
-      '1-hour one-on-one consultation',
-      'Career path analysis and recommendations',
-      'Industry trends and opportunities',
-      'Skill gap analysis',
-      'Training recommendations',
-      'Job market insights',
-      'Networking guidance',
-      'Action plan development'
-    ],
-    price: 2000,
-    currency: 'Rs',
-    icon: '🎯',
-    category: 'consultation',
-    whatsappMessage: 'Hi! I would like to book an aviation career consultation session. Please provide available time slots and details.'
-  },
-  {
-    id: 'document-verification',
-    title: 'Document Verification & Guidance',
-    description: 'Professional assistance with document preparation and verification for aviation job applications and certifications.',
-    features: [
-      'Document checklist and requirements',
-      'Verification of certificates and credentials',
-      'Application form assistance',
-      'Document formatting and organization',
-      'Submission guidance',
-      'Follow-up support',
-      'Digital document management',
-      'Compliance checking'
+      "Professional CV (colour-coded)",
+      "Custom cover letter (matching design)",
+      "Objectives, Skills, Interests highlighted",
+      "ATS-optimized keywords",
+      "Multiple file formats",
     ],
     price: 1000,
-    currency: 'Rs',
-    icon: '📋',
-    category: 'documents',
-    whatsappMessage: 'Hi! I need assistance with document verification and preparation for aviation job applications. Please help me with this service.'
+    currency: "Rs",
+    icon: "📑",
+    category: "career-services",
+    whatsappMessage:
+      "Hi! I'd like to order the CV + Cover Letter bundle (Rs. 1000). Please provide more details.",
+    popular: true,
   },
   {
-    id: 'english-proficiency-test',
-    title: 'English Proficiency Test Preparation',
-    description: 'Specialized coaching for aviation English proficiency tests required for various aviation positions.',
+    id: "interview-ready-pack",
+    title: "Interview Ready Pack",
+    description:
+      "Comprehensive preparation pack to excel in aviation job interviews.",
     features: [
-      'ICAO English proficiency standards',
-      'Speaking and listening practice',
-      'Aviation-specific vocabulary',
-      'Mock test sessions',
-      'Pronunciation improvement',
-      'Communication skills development',
-      'Test-taking strategies',
-      'Progress assessment'
+      "100+ interview questions",
+      "15 main questions with 3 examples each",
+      "Audio recordings for examples",
+      "30+ special PDFs for interview prep",
+      "Grooming & makeup guidance",
+      "Path development (education, vocational, career)",
+      "25+ professional audio resources",
+      "Zoom guidance (2 hours)",
     ],
-    price: 3500,
-    currency: 'Rs',
-    icon: '🗣️',
-    category: 'exam-prep',
-    whatsappMessage: 'Hi! I\'m interested in English proficiency test preparation for aviation. Please provide details about your coaching program.'
-  }
+    price: 6000,
+    currency: "Rs",
+    icon: "🎤",
+    category: "packages",
+    whatsappMessage:
+      "Hi! I'm interested in the Interview Ready Pack (Rs. 6000). Please provide details.",
+  },
+  {
+    id: "assessment-pack",
+    title: "Special Assessment Pack",
+    description:
+      "Complete assessment preparation pack covering multiple aviation-related subjects.",
+    features: [
+      "General English",
+      "General Maths",
+      "General Aviation Knowledge",
+      "Airline knowledge (SriLankan, Qatar, Emirates, etc.)",
+      "General IQ",
+      "Special airport exam preparation",
+    ],
+    price: 4000,
+    currency: "Rs",
+    icon: "📋",
+    category: "exam-prep",
+    whatsappMessage:
+      "Hi! I'm interested in the Special Assessment Pack (Rs. 4000). Please provide details.",
+  },
+  {
+    id: "english-pack",
+    title: "English Proficiency Pack",
+    description:
+      "Specialized English training for aviation and airline job applications.",
+    features: [
+      "ICAO English proficiency standards",
+      "Speaking & listening practice",
+      "Aviation-specific vocabulary",
+      "100+ spoken English PDFs",
+      "Mock sessions & recordings",
+      "Progress assessment",
+    ],
+    price: 3000,
+    currency: "Rs",
+    icon: "🗣️",
+    category: "exam-prep",
+    whatsappMessage:
+      "Hi! I'm interested in the English Proficiency Pack (Rs. 3000). Please provide details.",
+  },
+  {
+    id: "all-packages",
+    title: "All 3 Packages",
+    description:
+      "Get Interview Ready Pack + Assessment Pack + English Pack together.",
+    features: [
+      "Interview Ready Pack",
+      "Assessment Pack",
+      "English Pack",
+      "Full preparation for aviation jobs",
+      "Discounted combo price",
+    ],
+    price: 10000,
+    currency: "Rs",
+    icon: "⭐",
+    category: "packages",
+    whatsappMessage:
+      "Hi! I'd like to order the full package (Interview, Assessment, English) for Rs. 10,000. Please provide details.",
+  },
+  {
+    id: "interview-assessment-combo",
+    title: "Interview + Assessment Combo",
+    description: "Bundle of Interview Ready Pack + Assessment Pack.",
+    features: [
+      "Full interview preparation",
+      "Assessment subjects included",
+      "Discounted price for combo",
+    ],
+    price: 8000,
+    currency: "Rs",
+    icon: "🎯",
+    category: "packages",
+    whatsappMessage:
+      "Hi! I'd like to order the Interview Ready + Assessment Pack combo (Rs. 8000). Please provide details.",
+  },
+  {
+    id: "airline-application-service",
+    title: "Airline Application Service",
+    description:
+      "Apply directly to airline job vacancies with guided assistance.",
+    features: [
+      "Applications for major airlines",
+      "Emirates – Rs. 500",
+      "Qatar – Rs. 500",
+      "SriLankan – Rs. 500",
+      "Air Arabia – Rs. 500",
+      "Etihad – Rs. 300",
+      "Cabin crew & other positions",
+      "Vacancy monitoring & updates",
+    ],
+    price: 500, // base price
+    currency: "Rs",
+    icon: "✈️",
+    category: "documents",
+    whatsappMessage:
+      "Hi! I'd like help applying to airline vacancies. Please provide details.",
+  },
+  {
+    id: "document-verification",
+    title: "Document Verification & Guidance",
+    description:
+      "Assistance with aviation job application documents and verification.",
+    features: [
+      "Document checklist",
+      "Cover letters preparation",
+      "Certificates & credential verification",
+      "Background color & size corrections",
+      "Submission guidance",
+      "Compliance checks",
+    ],
+    price: 1000,
+    currency: "Rs",
+    icon: "📂",
+    category: "documents",
+    whatsappMessage:
+      "Hi! I need assistance with aviation document verification (Rs. 1000). Please provide more details.",
+  },
 ];
 
 export const serviceCategories = [
   {
-    id: 'exam-prep',
-    name: 'Exam Preparation',
-    description: 'Comprehensive preparation packages for aviation exams',
-    icon: '📚'
+    id: "exam-prep",
+    name: "Exam Preparation",
+    description: "Comprehensive preparation packages for aviation exams",
+    icon: "📚",
   },
   {
-    id: 'career-services',
-    name: 'Career Services',
-    description: 'Professional career development and job search assistance',
-    icon: '💼'
+    id: "career-services",
+    name: "Career Services",
+    description: "Professional CV, cover letters, and job application support",
+    icon: "💼",
   },
   {
-    id: 'consultation',
-    name: 'Consultation',
-    description: 'Expert guidance and personalized advice',
-    icon: '🎯'
+    id: "consultation",
+    name: "Consultation",
+    description: "Expert guidance and personalized advice",
+    icon: "🎯",
   },
   {
-    id: 'documents',
-    name: 'Documentation',
-    description: 'Document preparation and verification services',
-    icon: '📋'
-  }
+    id: "documents",
+    name: "Documentation",
+    description: "Document preparation, verification, and airline applications",
+    icon: "📋",
+  },
+  {
+    id: "packages",
+    name: "Packages & Bundles",
+    description: "Special bundled training and preparation packs",
+    icon: "📦",
+  },
 ];
+
+// 💳 Payment Info
+export const paymentDetails = {
+  accountNumber: "1195 5212 2167",
+  accountName: "P.L.D. Isuru Lakshan",
+  bank: "Sampath Bank - Nawalapitiya",
+  note: "Please send payment slip after transaction 😊",
+};

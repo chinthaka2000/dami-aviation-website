@@ -7,6 +7,13 @@ import PricingSection from '../components/course/PricingSection';
 import JobOpportunitiesSection from '../components/course/JobOpportunitiesSection';
 import TestimonialsSection from '../components/course/TestimonialsSection';
 import '../styles/course.css';
+import PromoVideoSection from '../components/PromoVideoSection';
+
+const PromoVideoCourseSection = () => (
+  <div id="promo-video">
+    <PromoVideoSection youtubeId="" />
+  </div>
+);
 
 const CoursePage = () => {
   const [, setActiveSection] = useState('overview');
@@ -16,6 +23,7 @@ const CoursePage = () => {
   // Course sections configuration
   const courseSections = [
     { id: 'overview', title: 'Overview', component: CourseOverviewSection },
+    { id: 'promo-video', title: 'Promo Video', component: PromoVideoCourseSection },
     { id: 'modules', title: 'Course Modules', component: CourseModulesSection },
     { id: 'requirements', title: 'Entry Requirements', component: EntryRequirementsSection },
     { id: 'pricing', title: 'Pricing', component: PricingSection },

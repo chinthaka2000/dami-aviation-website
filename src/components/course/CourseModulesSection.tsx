@@ -139,7 +139,7 @@ const CourseModulesSection: React.FC = () => {
             </h3>
             <p className="text-gray-300 mb-6">
               {activeTab === 'theoretical'
-                ? 'Our comprehensive 10-week theoretical curriculum by Instructor Damith Isuru Lakshan covers all essential knowledge areas from aviation history to career development. Online sessions every Saturday and Sunday, 8:00 PM to 10:30 PM, totaling 60 hours of intensive training aligned with international aviation standards.'
+                ? 'Our comprehensive 10-week theoretical curriculum by Instructor Damith Isuru Lakshan covers all essential knowledge areas from aviation history to career development. Online sessions every Saturday and Sunday, 8:00 PM to 10:30 PM, totaling 100+ hours of intensive training aligned with international aviation standards.'
                 : 'Our intensive 2-day physical training programme at Jayathilake Ground, Nawalapitiya provides hands-on experience in fire safety, first aid, professional grooming, physical fitness, and water survival training conducted by certified instructors.'
               }
             </p>
@@ -153,7 +153,7 @@ const CourseModulesSection: React.FC = () => {
               </div>
               <div className="text-center">
                 <div className="text-[#D4175C] text-2xl font-bold mb-2">
-                  {activeTab === 'theoretical' ? '80+' : '2'}
+                  {activeTab === 'theoretical' ? '100+' : '2'}
                 </div>
                 <div className="text-white font-semibold">
                   {activeTab === 'theoretical' ? 'Hours' : 'Days'}

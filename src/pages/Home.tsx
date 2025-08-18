@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import HeroSection from '../components/HeroSection';
 import VideoSection from '../components/VideoSection';
+import PromoVideoSection from '../components/PromoVideoSection';
 import AboutSection from '../components/AboutSection';
 
 import WhyChooseUsSection from '../components/WhyChooseUsSection';
@@ -14,7 +15,6 @@ const Home = () => {
     <HeroSection />
     <VideoSection />
     <AboutSection />
-
     <WhyChooseUsSection />
     <StudentReviewsSection />
     <ContactSection />

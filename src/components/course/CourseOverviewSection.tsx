@@ -161,6 +161,8 @@ const CourseOverviewSection = () => {
 
           <div className="relative h-64 md:h-96 lg:h-[500px] animate-float">
             <div ref={aviationAnimation} className="w-full h-full"></div>
+
+
           </div>
         </div>
 
