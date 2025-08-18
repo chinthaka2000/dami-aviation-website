@@ -69,22 +69,9 @@ const OurTeamPage = () => {
       icon: Star
     },
     {
-      id: 6,
-      name: "Mr. Lahiru Dilshan",
-      position: "Physical Fitness Training Instructor",
-      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754673138/lahiru-dilshan.jpg",
-      experience: "10+ years",
-      specialization: "Physical Fitness, Health & Endurance Training, Wellness Coaching",
-      certifications: ["Certified Fitness Trainer", "Health & Wellness Coach", "Physical Training Specialist"],
-      achievements: "Professional fitness trainer specializing in health, endurance and physical conditioning",
-      trainingHighlight: "Comprehensive fitness training focusing on health, endurance and physical preparation",
-      successMetric: "Fitness Excellence",
-      icon: Trophy
-    },
-    {
       id: 7,
       name: "Mr. Mahesh Gunarathna",
-      position: "Water Survival Skills Instructor",
+      position: "Water Survival Skills & Physical Fitness Instructor",
       image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754673138/mahesh-gunarathna.jpg",
       experience: "16+ years",
       specialization: "Water Safety, Survival Techniques, Emergency Water Procedures",
