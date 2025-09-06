@@ -42,25 +42,7 @@ const OurTeamPage = () => {
       successMetric: "Zero Incidents Record",
       icon: Target
     },
-    {
-      id: 3,
-      name: "Dr. Sandaruwan Liyanage",
-      position: "First Aid & Medical Emergency Instructor",
-      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754673138/dr-sandaruwan.jpg",
-      experience: "18+ years",
-      specialization: "Emergency Medical Response, First Aid Training, Life-Saving Techniques",
-      certifications: [
-        "Medical Doctor",
-        "Emergency Medicine Specialist",
-        "First Aid Instructor"
-      ],
-      achievements:
-        "Experienced medical professional with deep expertise in hospital emergency operations and student training.",
-      trainingHighlight:
-        "Comprehensive life-saving techniques and medical emergency procedures.",
-      successMetric: "Medical Professional",
-      icon: Heart
-    },
+    
     {
       id: 4,
       name: "Mrs. Anoma Herath",

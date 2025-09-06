@@ -106,7 +106,7 @@ const Footer = () => {
                   <strong className="text-[#D4175C]">Address:</strong> Nawalapitiya , Sri Lanka
                 </li>
                 <li className="hover:text-white transition-colors duration-300">
-                  <strong className="text-[#D4175C]">Phone:</strong> 074 329 3829 | 078 328 8025
+                  <strong className="text-[#D4175C]">Phone:</strong> 077 342 8832 | 078 328 8025
                 </li>
                 <li className="hover:text-white transition-colors duration-300">
                   <strong className="text-[#D4175C]">Email:</strong> damiaviationlanka@gmail.com

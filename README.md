@@ -141,7 +141,7 @@ src/
 ### WhatsApp Integration
 Update the phone number in `src/utils/whatsapp.ts`:
 ```typescript
-const whatsappUrl = `https://wa.me/94743293829?text=${message}`;
+const whatsappUrl = `https://wa.me/94773428832?text=${message}`;
 ```
 
 ### Course Data
@@ -184,7 +184,7 @@ This project is proprietary software owned by DAMI Aviation Training Institute. 
 </div>
 
 For support and inquiries:
-- **WhatsApp:** [+94 74 329 3829](https://wa.me/94743293829)
+- **WhatsApp:** [+94 77 342 8832](https://wa.me/94773428832)
 - **Email:** info@damiaviation.com
 - **Website:** [DAMI Aviation](https://damiaviation.lk)
 

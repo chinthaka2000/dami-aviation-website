@@ -132,7 +132,7 @@ const PrivacyPolicyPage: React.FC = () => {
               </div>
               <div>
                 <h4 className="text-[#D4175C] font-medium mb-2">Phone</h4>
-                <p>+94 74 329 3829 | +94 78 328 8025</p>
+                <p>+94 77 342 8832 | +94 78 328 8025</p>
               </div>
               <div>
                 <h4 className="text-[#D4175C] font-medium mb-2">Address</h4>

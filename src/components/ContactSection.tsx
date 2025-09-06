@@ -177,7 +177,7 @@ const ContactSection = () => {
                 Sri Lanka
               </ContactInfo>
               <ContactInfo icon={<Phone className="text-[#D4175C]" />} title="Phone">
-                +(94) 74 329 3829 | +(94) 78 328 8025
+                +(94) 77 342 8832 | +(94) 78 328 8025
                 <br />
 
               </ContactInfo>
