@@ -6,26 +6,39 @@ const OurTeamPage = () => {
     {
       id: 1,
       name: "Damith Isuru",
-      position: "Founder & CEO / Cabin Crew Interview Training Specialist",
-      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754673138/damith-isuru.jpg",
+      position: "Founder & Lead Instructor – Dami Aviation",
+      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1756842104/WhatsApp_Image_2025-08-10_at_16.00.53_easvl5.jpg",
       experience: "15+ years",
-      specialization: "Cabin Crew Interview Training, Aviation Industry Leadership",
-      certifications: ["Industry Specialist", "Interview Training Expert", "Aviation Professional"],
-      achievements: "Founded DAMI Aviation to bridge the gap between aspiring cabin crew and airline requirements",
-      trainingHighlight: "Exclusive interview preparation program with 95% success rate",
-      successMetric: "500+ Students Trained",
+      specialization: "Cabin Crew Training, Interview Preparation, Career Development",
+      certifications: [
+        "Diploma in Hotel Management",
+        "Diploma in English",
+        "Aviation Interview Training Specialist",
+        "Hospitality & Communication Expert"
+      ],
+      achievements:
+        "Founder of Dami Aviation Lanka (Pvt) Ltd, training over 150 students, with 25+ placed in global airlines and aviation companies. Delivers career support from training to placement with a focus on professionalism and international standards.",
+      trainingHighlight:
+        "One-to-one mentoring, practical exposure in fire & rescue, water survival, grooming, first aid, fitness, and more — with a 95% success rate.",
+      successMetric: "“Shaping Dreams into Aviation Careers” ✈️",
       icon: Trophy
     },
     {
       id: 2,
       name: "Mr. Chaminda Nuragodage",
       position: "Fire Safety Training Instructor",
-      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754673138/chaminda-nuragodage.jpg",
+      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1756842068/WhatsApp_Image_2025-08-22_at_15.34.29_moytxy.jpg",
       experience: "20+ years",
       specialization: "Fire Safety, Emergency Response, Rescue Operations",
-      certifications: ["Certified Fire Safety Instructor", "Emergency Response Specialist", "Rescue Operations"],
-      achievements: "Specialized in comprehensive fire safety training with hands-on extinguisher experience",
-      trainingHighlight: "Real-world fire emergency simulations and rescue operation techniques",
+      certifications: [
+        "Certified Fire Safety Instructor",
+        "Emergency Response Specialist",
+        "Rescue Operations Expert"
+      ],
+      achievements:
+        "Specialized in hands-on fire safety training including live extinguisher sessions and emergency simulations.",
+      trainingHighlight:
+        "Real-world fire emergency simulations and rescue operation techniques.",
       successMetric: "Zero Incidents Record",
       icon: Target
     },
@@ -36,9 +49,15 @@ const OurTeamPage = () => {
       image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754673138/dr-sandaruwan.jpg",
       experience: "18+ years",
       specialization: "Emergency Medical Response, First Aid Training, Life-Saving Techniques",
-      certifications: ["Medical Doctor", "Emergency Medicine Specialist", "First Aid Instructor"],
-      achievements: "Experienced medical professional with extensive hospital and emergency room background",
-      trainingHighlight: "Life-saving techniques and comprehensive medical emergency procedures for students",
+      certifications: [
+        "Medical Doctor",
+        "Emergency Medicine Specialist",
+        "First Aid Instructor"
+      ],
+      achievements:
+        "Experienced medical professional with deep expertise in hospital emergency operations and student training.",
+      trainingHighlight:
+        "Comprehensive life-saving techniques and medical emergency procedures.",
       successMetric: "Medical Professional",
       icon: Heart
     },
@@ -46,42 +65,66 @@ const OurTeamPage = () => {
       id: 4,
       name: "Mrs. Anoma Herath",
       position: "First Aid & Medical Emergency Co-Instructor",
-      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754673138/anoma-herath.jpg",
-      experience: "15+ years",
-      specialization: "Medical Emergency Procedures, First Aid Training, Healthcare",
-      certifications: ["First Aid Certified", "Medical Emergency Response", "Healthcare Professional"],
-      achievements: "Dedicated healthcare professional specializing in emergency response training",
-      trainingHighlight: "Practical first aid scenarios and emergency medical response protocols",
-      successMetric: "Healthcare Expert",
+      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1756842067/WhatsApp_Image_2025-09-01_at_12.21.39_hxviep.jpg",
+      experience: "16+ years",
+      specialization: "Medical Emergency Procedures, First Aid Coaching, Student Wellness",
+      certifications: [
+        "BSc Hons in Nursing",
+        "Certified First Aid Coach",
+        "Emergency Response Instructor"
+      ],
+      achievements:
+        "Healthcare expert committed to equipping students with life-saving skills and calm response techniques.",
+      trainingHighlight:
+        "Hands-on emergency simulations and medical care roleplays.",
+      successMetric: "First Aid Coach",
       icon: Heart
     },
     {
       id: 5,
       name: "Miss Sithara Dilrukshi",
       position: "Professional Grooming & Appearance Instructor",
-      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754673138/sithara-dilrukshi.jpg",
-      experience: "12+ years",
-      specialization: "Professional Grooming, Personal Presentation, Image Consulting",
-      certifications: ["Professional Grooming Specialist", "Image Consultant", "Beauty & Styling Expert"],
-      achievements: "Expert in professional grooming and image development with focus on international standards",
-      trainingHighlight: "Complete makeover training focusing on professional appearance and presentation skills",
-      successMetric: "Image Transformation",
+      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1756842067/WhatsApp_Image_2025-08-23_at_14.21.30_mgpfyz.jpg",
+      experience: "15 years",
+      specialization: "Bridal Styling, Grooming, Beauty Technology, Professional Make-up",
+      certifications: [
+        "NVQ Level 4 – Hairdresser",
+        "NVQ Level 4 – Beautician",
+        "NVQ Level 4 – Bridal Dresser",
+        "Associate Degree in Cosmetology & Management",
+        "Advanced Facial & Beauty Technology (SPMU)"
+      ],
+      achievements:
+        "Award-winning bridal and beauty expert. Recognized for professionalism and creativity in grooming and styling.",
+      trainingHighlight:
+        "Transformational grooming program based on international standards and beauty technology.",
+      successMetric: "Best Bridal Makeup Artist (Iconic Award 2023)",
       icon: Star
     },
     {
-      id: 7,
-      name: "Mr. Mahesh Gunarathna",
+      id: 6,
+      name: "Mr. Mahesh Gunawardhana",
       position: "Water Survival Skills & Physical Fitness Instructor",
-      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1754673138/mahesh-gunarathna.jpg",
-      experience: "16+ years",
-      specialization: "Water Safety, Survival Techniques, Emergency Water Procedures",
-      certifications: ["Water Survival Instructor", "Safety Training Specialist", "Emergency Procedures Expert"],
-      achievements: "Expert in comprehensive water survival training and emergency water safety procedures",
-      trainingHighlight: "Essential water safety skills and survival techniques for emergency situations",
+      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1756842067/WhatsApp_Image_2025-09-01_at_00.57.19_dj1w2z.jpg",
+      experience: "35+ years",
+      specialization: "Water Survival, Physical Training, Firefighting, Lifesaving",
+      certifications: [
+        "Retired Navy Officer",
+        "Bachelor in Labour Education (University of Colombo)",
+        "Diploma in Sports (NISS Sri Lanka)",
+        "PT Courses – Sri Lanka, India, Pakistan",
+        "Nuclear Biological Chemical Defence & Firefighting (Pakistan)",
+        "Lifesaving – Sri Lanka, India, Pakistan, New Zealand"
+      ],
+      achievements:
+        "Extensive military and rescue training background. Delivers critical physical, rescue, and water survival training to aviation students.",
+      trainingHighlight:
+        "Advanced water safety, swimming, emergency drills, and physical conditioning based on military protocols.",
       successMetric: "Safety Excellence",
       icon: Target
     }
   ];
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a1929] to-[#0f2942] pt-20">

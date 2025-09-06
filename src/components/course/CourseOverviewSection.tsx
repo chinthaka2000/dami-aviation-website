@@ -75,7 +75,7 @@ const CourseOverviewSection = () => {
       </div>
 
       {/* International Certification Badge */}
-      <div className="absolute top-24 right-4 md:right-8 bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/20 animate-glow">
+      <div className="absolute top-32 right-4 md:right-8 bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/20 animate-glow">
         <div className="flex items-center space-x-2">
           <Award className="text-[#D4175C]" size={20} />
           <div className="hidden sm:block">
@@ -95,7 +95,7 @@ const CourseOverviewSection = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="text-center lg:text-left animate-fadeIn">
-            <div className="inline-flex items-center bg-[#B5054A]/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-[#B5054A]/30">
+            <div className="inline-flex items-center bg-[#B5054A]/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-[#B5054A]/30 mt-8">
               <Award className="text-[#D4175C] mr-2" size={16} />
               <span className="text-white text-sm font-medium">Dami Certified Program</span>
             </div>

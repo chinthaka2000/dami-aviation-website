@@ -843,6 +843,268 @@ const GalleryPage = () => {
       type: 'image'
     },
 
+    // Batch 5 - Placeholder images (URLs to be added)
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154142/5_wmpm8r.jpg',
+      title: 'Batch 5 - Group Photo',
+      description: 'Our fifth batch of dedicated aviation students',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154142/99_u59qbm.jpg',
+      title: 'Batch 5 - Training Session',
+      description: 'Batch 5 students during their intensive training program',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154143/264_hr3u3n.jpg',
+      title: 'Batch 5 - Professional Development',
+      description: 'Building professional aviation skills',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154143/12_ppypek.jpg',
+      title: 'Batch 5 - Skills Assessment',
+      description: 'Evaluating student progress and skills',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154145/63_glbjvw.jpg',
+      title: 'Batch 5 - Training Excellence',
+      description: 'Demonstrating training excellence standards',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154145/92_m8rqzb.jpg',
+      title: 'Batch 5 - Practical Training',
+      description: 'Hands-on aviation training experience',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154145/29_ifalzh.jpg',
+      title: 'Batch 5 - Learning Progress',
+      description: 'Students making excellent progress',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154143/145_iaz4t4.jpg',
+      title: 'Batch 5 - Group Activity',
+      description: 'Collaborative learning environment',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154144/118_asscnm.jpg',
+      title: 'Batch 5 - Training Program',
+      description: 'Comprehensive training program delivery',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154144/162_gyqad4.jpg',
+      title: 'Batch 5 - Student Success',
+      description: 'Celebrating student success stories',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154145/47_hjlakf.jpg',
+      title: 'Batch 5 - Aviation Training',
+      description: 'Comprehensive aviation education',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154146/94_au5usm.jpg',
+      title: 'Batch 5 - Professional Growth',
+      description: 'Students developing professional skills',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154146/36_fxwtj0.jpg',
+      title: 'Batch 5 - Team Building',
+      description: 'Building strong team relationships',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154147/89_yomtiv.jpg',
+      title: 'Batch 5 - Achievement Ceremony',
+      description: 'Recognizing outstanding achievements',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154147/208_pv4fk6.jpg',
+      title: 'Batch 5 - Training Workshop',
+      description: 'Interactive training workshop session',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154147/81_grc2ha.jpg',
+      title: 'Batch 5 - Skills Development',
+      description: 'Developing essential aviation skills',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154148/225_yfk8tq.jpg',
+      title: 'Batch 5 - Practical Exercise',
+      description: 'Hands-on practical training exercise',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154149/150_jcptck.jpg',
+      title: 'Batch 5 - Group Learning',
+      description: 'Collaborative group learning session',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154149/135_ojgjp1.jpg',
+      title: 'Batch 5 - Training Progress',
+      description: 'Students showing excellent training progress',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154149/256_gdb1kw.jpg',
+      title: 'Batch 5 - Learning Environment',
+      description: 'Positive learning environment',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154150/270_m7txnz.jpg',
+      title: 'Batch 5 - Student Engagement',
+      description: 'High level of student engagement',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154150/153_bfcvtd.jpg',
+      title: 'Batch 5 - Training Session',
+      description: 'Intensive training session in progress',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154151/31_og2s8y.jpg',
+      title: 'Batch 5 - Skill Assessment',
+      description: 'Comprehensive skill assessment session',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154151/108_v0mjz5.jpg',
+      title: 'Batch 5 - Group Activity',
+      description: 'Team building group activity',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154152/21_ocazkn.jpg',
+      title: 'Batch 5 - Training Excellence',
+      description: 'Demonstrating training excellence',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154152/303_ltcsjn.jpg',
+      title: 'Batch 5 - Professional Development',
+      description: 'Continuous professional development',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154152/114_mvmnsf.jpg',
+      title: 'Batch 5 - Learning Journey',
+      description: 'Students on their learning journey',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154152/2_mzoobi.jpg',
+      title: 'Batch 5 - Aviation Training',
+      description: 'Comprehensive aviation training program',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154153/336_blyxtl.jpg',
+      title: 'Batch 5 - Student Success',
+      description: 'Celebrating student success milestones',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154154/166_xkoguw.jpg',
+      title: 'Batch 5 - Training Workshop',
+      description: 'Specialized training workshop session',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154154/272_y93k3e.jpg',
+      title: 'Batch 5 - Practical Learning',
+      description: 'Practical hands-on learning experience',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154154/287_spzszd.jpg',
+      title: 'Batch 5 - Group Collaboration',
+      description: 'Effective group collaboration',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154155/330_iwrwpv.jpg',
+      title: 'Batch 5 - Training Program',
+      description: 'Comprehensive training program delivery',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154155/257_qrqsqr.jpg',
+      title: 'Batch 5 - Student Engagement',
+      description: 'Active student engagement in learning',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154155/113_heov9m.jpg',
+      title: 'Batch 5 - Aviation Excellence',
+      description: 'Pursuing aviation excellence standards',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154156/64_ilopsu.jpg',
+      title: 'Batch 5 - Final Assessment',
+      description: 'Final comprehensive assessment session',
+      category: 'student-batches',
+      type: 'image'
+    },
+    {
+      src: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154156/6_p8dm4c.jpg',
+      title: 'Batch 5 - Graduation Day',
+      description: 'Celebrating Batch 5 successful completion',
+      category: 'student-batches',
+      type: 'image'
+    },
+    
+
     // Events & Ceremonies Category
     {
       src: getGalleryImageUrl('dsc05958', { width: 800, height: 600 }),
@@ -1081,6 +1343,13 @@ const GalleryPage = () => {
       icon: '🎓',
       description: 'Our fourth batch of dedicated aviation students',
       coverImage: getGalleryImageUrl('dsc06071', { width: 600, height: 400 })
+    },
+    {
+      id: 'batch-5',
+      name: 'Batch 5',
+      icon: '🎓',
+      description: 'Our fifth batch of dedicated aviation students',
+      coverImage: 'https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154144/162_gyqad4.jpg'
     }
   ];
 
@@ -1107,6 +1376,11 @@ const GalleryPage = () => {
       // For Batch 4, check if the title contains "Batch 4"
       if (selectedBatch === 'batch-4') {
         return image.title.includes('Batch 4');
+      }
+
+      // For Batch 5, check if the title contains "Batch 5"
+      if (selectedBatch === 'batch-5') {
+        return image.title.includes('Batch 5');
       }
 
       // For other batches, use the original logic
@@ -1214,7 +1488,7 @@ const GalleryPage = () => {
                       <p className="text-gray-300 text-sm mb-3">{category.description}</p>
                       <div className="flex items-center justify-between">
                         <span className="text-xs bg-[#B5054A]/80 text-white px-3 py-1 rounded-full">
-                          {category.id === 'student-batches' ? '4 batches' : `${galleryImages.filter(img => img.category === category.id).length} items`}
+                          {category.id === 'student-batches' ? '5 batches' : `${galleryImages.filter(img => img.category === category.id).length} items`}
                         </span>
                         <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-[#B5054A]/80 transition-colors duration-300">
                           <ChevronRight size={16} className="text-white" />
@@ -1283,6 +1557,7 @@ const GalleryPage = () => {
                             if (batch.id === 'batch-2') return img.title.includes('Batch 2');
                             if (batch.id === 'batch-3') return img.title.includes('Batch 3');
                             if (batch.id === 'batch-4') return img.title.includes('Batch 4');
+                            if (batch.id === 'batch-5') return img.title.includes('Batch 5');
                             return false;
                           }).length} photos
                         </span>

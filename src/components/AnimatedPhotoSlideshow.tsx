@@ -35,7 +35,32 @@ const AnimatedPhotoSlideshow = () => {
       src: getGalleryImageUrl('dsc05670', { width: 1200, height: 800 }),
       title: 'Physical Fitness Programme',
       description: 'Aviation-specific fitness and conditioning training'
-    }
+    },
+    {
+      src: getGalleryImageUrl('dsc05931', { width: 1200, height: 800 }),
+      title: 'Emergency Safety Training',
+      description: 'Critical fire safety and rescue procedures'
+    },
+    {
+      src: getGalleryImageUrl('dsc06071', { width: 1200, height: 800 }),
+      title: 'Expert Instructors & Successful Students',
+      description: 'Learn from industry professionals with years of experience'
+    },
+    {
+      src: getGalleryImageUrl('dsc05892', { width: 1200, height: 800 }),
+      title: 'State-of-the-Art Training Facilities',
+      description: 'Modern aviation training centers equipped with the latest technology'
+    },
+    {
+      src: getGalleryImageUrl('dsc05924', { width: 1200, height: 800 }),
+      title: 'Professional Cabin Crew Training',
+      description: 'Comprehensive preparation for aviation service excellence'
+    },
+    {
+      src: getGalleryImageUrl('dsc09510', { width: 1200, height: 800 }),
+      title: 'Water Survival Training',
+      description: 'Essential water emergency and survival techniques'
+    },
   ];
 
   // Auto-advance slideshow every 4 seconds
