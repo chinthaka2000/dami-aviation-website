@@ -5,10 +5,10 @@ const OurTeamPage = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Damith Isuru",
+      name: "Mr. Damith Isuru",
       position: "Founder & Lead Instructor – Dami Aviation",
-      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1756842104/WhatsApp_Image_2025-08-10_at_16.00.53_easvl5.jpg",
-      experience: "15+ years",
+      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1757439358/DSC07936_lrsqge.jpg",
+      experience: "3+ years",
       specialization: "Cabin Crew Training, Interview Preparation, Career Development",
       certifications: [
         "Diploma in Hotel Management",
@@ -27,7 +27,7 @@ const OurTeamPage = () => {
       id: 2,
       name: "Mr. Chaminda Nuragodage",
       position: "Fire Safety Training Instructor",
-      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1756842068/WhatsApp_Image_2025-08-22_at_15.34.29_moytxy.jpg",
+      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1757439383/DSC07724_bwaan6.jpg",
       experience: "20+ years",
       specialization: "Fire Safety, Emergency Response, Rescue Operations",
       certifications: [
@@ -42,7 +42,7 @@ const OurTeamPage = () => {
       successMetric: "Zero Incidents Record",
       icon: Target
     },
-    
+
     {
       id: 4,
       name: "Mrs. Anoma Herath",
@@ -66,8 +66,8 @@ const OurTeamPage = () => {
       id: 5,
       name: "Miss Sithara Dilrukshi",
       position: "Professional Grooming & Appearance Instructor",
-      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1756842067/WhatsApp_Image_2025-08-23_at_14.21.30_mgpfyz.jpg",
-      experience: "15 years",
+      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1757439367/DSC07931_ftwove.jpg",
+      experience: "15+ years",
       specialization: "Bridal Styling, Grooming, Beauty Technology, Professional Make-up",
       certifications: [
         "NVQ Level 4 – Hairdresser",
@@ -106,7 +106,7 @@ const OurTeamPage = () => {
       icon: Target
     }
   ];
-  
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a1929] to-[#0f2942] pt-20">
@@ -157,7 +157,7 @@ const OurTeamPage = () => {
                 <div className="flex flex-col md:flex-row gap-6">
                   {/* Photo */}
                   <div className="flex-shrink-0">
-                    <div className="w-32 h-32 rounded-2xl overflow-hidden bg-gradient-to-r from-[#D4175C] to-[#B5054A] p-1">
+                    <div className="w-40 h-40 rounded-2xl overflow-hidden bg-gradient-to-r from-[#D4175C] to-[#B5054A] p-1">
                       <img
                         src={member.image}
                         alt={member.name}

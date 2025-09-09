@@ -102,7 +102,7 @@ const TestimonialsSection: React.FC = () => {
   };
 
   // Calculate statistics
-  const totalTestimonials = 12;
+  const totalTestimonials = 25;
   const averageRating = 4.8;
 
   return (
