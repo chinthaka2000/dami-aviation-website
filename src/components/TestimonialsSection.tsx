@@ -5,18 +5,6 @@ import { handleRegister } from '../utils/whatsapp';
 // Cabin crew testimonials data - 10+ testimonials
 const cabinCrewTestimonials = [
   {
-    id: 'testimonial-1',
-    name: 'Charaka Gunawardana',
-    photo: '',
-    role: 'Airport Cargo Agent',
-    company: 'Sri Lankan Airlines',
-    rating: 5,
-    review: 'I found really useful and valuable that assistance and support received from Dami aviation. He gave us real time aviation related job opportunities and guide us how to pass and do well during the interview as well. He gave us in detail descriptions on the job and aviation field as well. His assistance helped me a lot to pass the interview as well. I can definitely say that it will be really helpful if you follow Dami aviation aviation courses.',
-    courseCompleted: 'Cabin Crew Training Program',
-    graduationYear: 2025,
-    location: ''
-  },
-  {
     id: 'testimonial-2',
     name: 'Nethmi Kaveesha',
     photo: '',
@@ -28,6 +16,50 @@ const cabinCrewTestimonials = [
     graduationYear: 2025,
     location: ''
   },
+  {
+    id: 'testimonial-9',
+    name: 'Jinethma Bandara',
+    photo: '',
+    role: 'Airport Service Agent',
+    company: 'Sri Lankan Airlines',
+    rating: 5,
+    review: 'Hello sir, this is Jinethma again, just typing to let you know that I have received the mail for final administrative process for the post, Airport Service Agent… Thank you, thank you & thank you so much ✨I wouldn\'t have come this far without your support.. I take this moment to thank you for every word you type along the group chat.. The reason why I didn\'t get back to you was because after my interview i was so worried and scared about my next step😂aka, "medicals". so I thought it would be great to reach out to you after the whole process … so please don’t misunderstand me.🙏 Your help will always be living rent free in my memories. i was unable to join your seminar as i had just come home from work...however i could make it to the recording today, and I should say... As always, 2 great hours. 🤩🤩🤩 there wasn\'t a single second I could omit...Intro, grooming, body language and form questions had been explained straightforwardly. I love the part where you explained about one\'s first impression..here, you made it very clear and helped me understand the material. I know how much a person\'s first impression can influence their whole assessment itself. I greatly appreciate ur willingness to help others and learn from feedbacks.😇🙏🏻 Honestly without your help, I wouldn\'t make it to this far..and I would like to humbly accept the fact that I\'m gonna need it in future too..✨🤍Thank you sooo much',
+    courseCompleted: 'Cabin Crew Training Program',
+    graduationYear: 2025,
+    location: ''
+  },
+  {
+    id: 'testimonial-10',
+    name: 'Shakya Perera',
+    photo: '',
+    role: 'Airport Service Agent',
+    company: 'Sri Lankan Airlines',
+    rating: 5,
+    review: 'I passed the interview today. Also selected for the medicals ☺ Thank you so much for your guidance sir ❤ Kiyanna thiyenne sirge guidance eka marama watinawa sirge motivation eka pawa "Do not give up 💪try and try one day u can fly". Sir attama sir kiyapu dewal sirge support ekath thibba apita hoyala baluwa mulu process ekedima attama thank u so much sir ❤'
+  },
+
+  {
+    id: 'testimonial-11',
+    name: 'Amaya Athukorala',
+    photo: '',
+    role: 'Airport Service Agent',
+    company: 'Sri Lankan Airlines',
+    rating: 5,
+    review: 'Sir I passed the interview🥺.. Thank You So Much for ur guidance and for everything which you have done until today.. And even the final seminar interview was also really helpful for the today\'s success.'
+  },
+  {
+    id: 'testimonial-1',
+    name: 'Charaka Gunawardana',
+    photo: '',
+    role: 'Airport Cargo Agent',
+    company: 'Sri Lankan Airlines',
+    rating: 5,
+    review: 'I found really useful and valuable that assistance and support received from Dami aviation. He gave us real time aviation related job opportunities and guide us how to pass and do well during the interview as well. He gave us in detail descriptions on the job and aviation field as well. His assistance helped me a lot to pass the interview as well. I can definitely say that it will be really helpful if you follow Dami aviation aviation courses.',
+    courseCompleted: 'Cabin Crew Training Program',
+    graduationYear: 2025,
+    location: ''
+  },
+
   {
     id: 'testimonial-3',
     name: 'Upeksha Hansini',
@@ -100,27 +132,8 @@ const cabinCrewTestimonials = [
     graduationYear: 2025,
     location: ''
   },
-  {
-    id: 'testimonial-9',
-    name: 'Jinethma Bandara',
-    photo: '',
-    role: 'Airport Service Agent',
-    company: 'Sri Lankan Airlines',
-    rating: 5,
-    review: 'Hello sir, this is Jinethma again, just typing to let you know that I have received the mail for final administrative process for the post, Airport Service Agent… Thank you, thank you & thank you so much ✨I wouldn\'t have come this far without your support.. I take this moment to thank you for every word you type along the group chat.. The reason why I didn\'t get back to you was because after my interview i was so worried and scared about my next step😂aka, "medicals". so I thought it would be great to reach out to you after the whole process … so please don’t misunderstand me.🙏 Your help will always be living rent free in my memories. i was unable to join your seminar as i had just come home from work...however i could make it to the recording today, and I should say... As always, 2 great hours. 🤩🤩🤩 there wasn\'t a single second I could omit...Intro, grooming, body language and form questions had been explained straightforwardly. I love the part where you explained about one\'s first impression..here, you made it very clear and helped me understand the material. I know how much a person\'s first impression can influence their whole assessment itself. I greatly appreciate ur willingness to help others and learn from feedbacks.😇🙏🏻 Honestly without your help, I wouldn\'t make it to this far..and I would like to humbly accept the fact that I\'m gonna need it in future too..✨🤍Thank you sooo much',
-    courseCompleted: 'Cabin Crew Training Program',
-    graduationYear: 2025,
-    location: ''
-  },
-  {
-    id: 'testimonial-10',
-    name: 'Shakya Perera',
-    photo: '',
-    role: 'Airport Service Agent',
-    company: 'Sri Lankan Airlines',
-    rating: 5,
-    review: 'I passed the interview today. Also selected for the medicals ☺ Thank you so much for your guidance sir ❤ Kiyanna thiyenne sirge guidance eka marama watinawa sirge motivation eka pawa "Do not give up 💪try and try one day u can fly". Sir attama sir kiyapu dewal sirge support ekath thibba apita hoyala baluwa mulu process ekedima attama thank u so much sir ❤'
-  },
+
+
   {
     id: 'testimonial-11',
     name: 'Amaya Athukorala',
@@ -249,7 +262,7 @@ const TestimonialsSection = () => {
 
               <div className="flex items-center space-x-2 bg-[#0f2942]/50 backdrop-blur-sm border border-gray-700/30 rounded-lg px-4 py-2">
                 <Award className="w-5 h-5 text-[#D4175C]" />
-                <span className="text-white font-semibold">20+</span>
+                <span className="text-white font-semibold">25+</span>
                 <span className="text-gray-400 text-sm">Success Stories</span>
               </div>
 

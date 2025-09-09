@@ -72,7 +72,7 @@ const AboutSection = () => {
             <div className="animate-float">
               <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-xl hover:shadow-[#B5054A]/10 hover:border-[#D4175C]/20 transition-all duration-500">
                 <img
-                  src="https://res.cloudinary.com/dzz0qlqve/image/upload/v1753771758/aboutus_imt9ah.jpg"
+                  src="https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154142/5_wmpm8r.jpg"
                   alt="DAMI Aviation Training"
                   className="w-full h-[280px] object-cover rounded-xl border-2 border-[#D4175C]/30 shadow-2xl shadow-[#B5054A]/20 hover:border-[#D4175C]/60 hover:shadow-[#D4175C]/30 transition-all duration-500"
                 />
@@ -90,7 +90,7 @@ const AboutSection = () => {
             <div className="animate-float" style={{ animationDelay: '2s' }}>
               <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-xl hover:shadow-[#B5054A]/10 hover:border-[#D4175C]/20 transition-all duration-500">
                 <img
-                  src="https://res.cloudinary.com/dzz0qlqve/image/upload/v1753771722/DSC09396_bou8e8.jpg"
+                  src="https://res.cloudinary.com/dzz0qlqve/image/upload/v1757154151/31_og2s8y.jpg"
                   alt="DAMI Aviation Training Excellence"
                   className="w-full h-[280px] object-cover rounded-xl border-2 border-[#D4175C]/30 shadow-2xl shadow-[#B5054A]/20 hover:border-[#D4175C]/60 hover:shadow-[#D4175C]/30 transition-all duration-500"
                 />
