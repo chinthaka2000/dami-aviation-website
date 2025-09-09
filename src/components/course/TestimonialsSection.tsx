@@ -25,18 +25,7 @@ const TestimonialsSection: React.FC = () => {
       console.error('Error loading testimonials:', error);
       // Fallback testimonials
       setDisplayedTestimonials([
-        {
-          id: 'test-1',
-          name: 'Charaka Gunawardana ',
-          photo: '',
-          role: 'Airport Cargo Agent',
-          company: 'Sri Lankan Airlines',
-          rating: 5,
-          review: 'I found really useful and valuable that assistance and support received from Dami aviation. He gave us real time aviation related job opportunities and guide us how to pass and do well during the interview as well. He gave us in detail descriptions on the job and aviation field as well. His assistance helped me a lot to pass the interview as well. I can definitely say that it will be really helpful if you follow Dami aviation aviation courses.',
-          courseCompleted: 'Cabin Crew Training Program',
-          graduationYear: 2025,
-          location: 'Colombo, Sri Lanka'
-        },
+
         {
           id: 'test-2',
           name: 'Nethmi Kaveesha (5th Batch) (2025)',
@@ -60,7 +49,19 @@ const TestimonialsSection: React.FC = () => {
           courseCompleted: 'Cabin Crew Training Program',
           graduationYear: 2025,
           location: 'Galle, Sri Lanka'
-        }
+        },
+        {
+          id: 'test-1',
+          name: 'Charaka Gunawardana ',
+          photo: '',
+          role: 'Airport Cargo Agent',
+          company: 'Sri Lankan Airlines',
+          rating: 5,
+          review: 'I found really useful and valuable that assistance and support received from Dami aviation. He gave us real time aviation related job opportunities and guide us how to pass and do well during the interview as well. He gave us in detail descriptions on the job and aviation field as well. His assistance helped me a lot to pass the interview as well. I can definitely say that it will be really helpful if you follow Dami aviation aviation courses.',
+          courseCompleted: 'Cabin Crew Training Program',
+          graduationYear: 2025,
+          location: 'Colombo, Sri Lanka'
+        },
       ]);
     }
   }, []);
@@ -103,7 +104,7 @@ const TestimonialsSection: React.FC = () => {
 
   // Calculate statistics
   const totalTestimonials = 25;
-  const averageRating = 4.8;
+  const averageRating = 4.9;
 
   return (
     <section id="testimonials" className="py-20 bg-gradient-to-b from-[#0a1929] to-[#0f2942] relative overflow-hidden">

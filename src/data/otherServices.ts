@@ -12,11 +12,11 @@ export interface OtherService {
   currency: string;
   icon: string;
   category:
-    | "exam-prep"
-    | "career-services"
-    | "consultation"
-    | "documents"
-    | "packages";
+  | "exam-prep"
+  | "career-services"
+  | "consultation"
+  | "documents"
+  | "packages";
   whatsappMessage: string;
   popular?: boolean;
 }
@@ -221,6 +221,26 @@ export const otherServices: OtherService[] = [
     category: "documents",
     whatsappMessage:
       "Hi! I need assistance with aviation document verification (Rs. 1000). Please provide more details.",
+  },
+  {
+    id: "aviation-career-consultation",
+    title: "Aviation Career Consultation",
+    description:
+      "Personalized 2-hour Zoom consultation covering interview preparation, grooming, and career path development.",
+    features: [
+      "2-hour Zoom session",
+      "5 interview-ready questions",
+      "Grooming and makeup readiness",
+      "Path development",
+      "Education path guidance",
+      "Vocational path guidance"
+    ],
+    price: 5000,
+    currency: "Rs",
+    icon: "🎯",
+    category: "consultation",
+    whatsappMessage:
+      "Hi! I'm interested in Aviation Career Consultation (Rs. 5000). Please provide details.",
   },
 ];
 

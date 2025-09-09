@@ -7,7 +7,7 @@ const OurTeamPage = () => {
       id: 1,
       name: "Mr. Damith Isuru",
       position: "Founder & Lead Instructor – Dami Aviation",
-      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1757439358/DSC07936_lrsqge.jpg",
+      image: "https://res.cloudinary.com/dzz0qlqve/image/upload/v1757443646/WhatsApp_Image_2025-09-10_at_00.02.10_r7zxtl.jpg",
       experience: "3+ years",
       specialization: "Cabin Crew Training, Interview Preparation, Career Development",
       certifications: [

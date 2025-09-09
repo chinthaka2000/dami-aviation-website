@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Check, MessageCircle, Star, Filter } from 'lucide-react';
-import { otherServices, serviceCategories, OtherService } from '../data/otherServices';
+import { otherServices, serviceCategories, OtherService, paymentDetails } from '../data/otherServices';
 import { handleServiceInquiry } from '../utils/whatsapp';
 
 const OtherServicesPage = () => {
@@ -138,6 +138,31 @@ const OtherServicesPage = () => {
             <p className="text-gray-400">Try selecting a different category or view all services.</p>
           </div>
         )}
+
+        {/* Payment Information */}
+        <div className="mb-16">
+          <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-8 border border-white/10 shadow-xl">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+              💳 Payment Information
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="text-center">
+                <h4 className="text-lg font-semibold text-white mb-2">Bank Details</h4>
+                <div className="bg-[#0f2942]/50 rounded-lg p-4 border border-white/10">
+                  <p className="text-gray-300 mb-1"><span className="text-[#D4175C] font-medium">Account Name:</span> {paymentDetails.accountName}</p>
+                  <p className="text-gray-300 mb-1"><span className="text-[#D4175C] font-medium">Account Number:</span> {paymentDetails.accountNumber}</p>
+                  <p className="text-gray-300"><span className="text-[#D4175C] font-medium">Bank:</span> {paymentDetails.bank}</p>
+                </div>
+              </div>
+              <div className="text-center">
+                <h4 className="text-lg font-semibold text-white mb-2">Important Note</h4>
+                <div className="bg-[#0f2942]/50 rounded-lg p-4 border border-white/10">
+                  <p className="text-[#D4175C] font-medium text-sm">{paymentDetails.note}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Contact Section */}
         <div className="text-center">
