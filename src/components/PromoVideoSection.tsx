@@ -41,7 +41,7 @@ const PromoVideoSection: React.FC<PromoVideoSectionProps> = ({ youtubeId }) => {
         <div className="max-w-5xl mx-auto">
           <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-white/10 shadow-xl">
             {youtubeId ? (
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <div className="relative w-full pb-[177.78%] md:pb-[56.25%]" style={{ height: 0 }}>
                 <iframe
                   ref={iframeRef}
                   className="absolute top-0 left-0 w-full h-full rounded-xl cursor-pointer"
