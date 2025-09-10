@@ -11,7 +11,7 @@ import PromoVideoSection from '../components/PromoVideoSection';
 
 const PromoVideoCourseSection = () => (
   <div id="promo-video">
-    <PromoVideoSection youtubeId="" />
+    <PromoVideoSection youtubeId="nibNYSLem1g" />
   </div>
 );
 
@@ -30,6 +30,11 @@ const CoursePage = () => {
     { id: 'job-opportunities', title: 'Career Opportunities', component: JobOpportunitiesSection },
     { id: 'testimonials', title: 'Student Reviews', component: TestimonialsSection },
   ];
+
+  // Add padding between "Professional Aviation Training Excellence" and "DAMI Merchandise"
+  // Assuming these are sections rendered inside CourseOverviewSection or similar,
+  // but since no direct reference, we add a global style or wrapper div padding here.
+
 
   useEffect(() => {
     // Scroll to top on page load
@@ -80,7 +85,7 @@ const CoursePage = () => {
   return (
     <div className="relative">
       {/* Course Sections */}
-      <main className="relative">
+      <main className="relative space-y-8">
         {courseSections.map((section) => {
           const SectionComponent = section.component;
           return (

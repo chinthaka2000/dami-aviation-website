@@ -25,7 +25,7 @@ const TestimonialsSection: React.FC = () => {
       console.error('Error loading testimonials:', error);
       // Fallback testimonials
       setDisplayedTestimonials([
-
+        
         {
           id: 'test-2',
           name: 'Nethmi Kaveesha (5th Batch) (2025)',

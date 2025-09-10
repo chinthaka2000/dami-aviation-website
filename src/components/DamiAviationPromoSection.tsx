@@ -9,16 +9,17 @@ const DamiAviationPromoSection = () => {
     if (iframeRef.current) {
       const newMuteState = isMuted ? 0 : 1;
       const currentSrc = iframeRef.current.src;
-      const newSrc = currentSrc.replace(/mute=\d/, \`mute=\${newMuteState}\`);
+      const newSrc = currentSrc.replace(/mute=\d/, `mute=${newMuteState}`);
+
       iframeRef.current.src = newSrc;
       setIsMuted(!isMuted);
     }
   };
 
   return (
-    <section className="py-20 bg-[#0f2942] relative overflow-hidden">
+    <section className="py-20 bg-[#0a1929]/60 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute right-0 top-1/4 w-64 h-64 rounded-full bg-[#B5054A]/10 blur-3xl"></div>
+      <div className="absolute right-0 top-1/4 w-64 h-64 rounded-full bg-[#0a1929]/10 blur-3xl"></div>
       <div className="absolute left-0 bottom-1/4 w-96 h-96 rounded-full bg-[#D4175C]/10 blur-3xl"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -32,7 +33,7 @@ const DamiAviationPromoSection = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-white/10 shadow-xl">
+          <div className="bg-[#0a1929] backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-white/10 shadow-xl">
             <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 ref={iframeRef}

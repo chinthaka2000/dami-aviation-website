@@ -12,11 +12,11 @@ export interface OtherService {
   currency: string;
   icon: string;
   category:
-  | "exam-prep"
-  | "career-services"
-  | "consultation"
-  | "documents"
-  | "packages";
+    | "exam-prep"
+    | "career-services"
+    | "consultation"
+    | "documents"
+    | "packages";
   whatsappMessage: string;
   popular?: boolean;
 }
