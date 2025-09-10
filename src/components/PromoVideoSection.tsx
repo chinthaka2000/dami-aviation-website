@@ -45,7 +45,7 @@ const PromoVideoSection: React.FC<PromoVideoSectionProps> = ({ youtubeId }) => {
                 <iframe
                   ref={iframeRef}
                   className="absolute top-0 left-0 w-full h-full rounded-xl cursor-pointer"
-                  src={`https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0&rel=0&loop=1&playlist=${youtubeId}&disablekb=1&fs=0&iv_load_policy=3`}
+                  src={`https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0&rel=0&loop=1&playlist=${youtubeId}&disablekb=1&fs=0&iv_load_policy=3&vq=hd1080&hd=1`}
                   title="DAMI Merchandise Promo Video"
                   style={{ border: 'none' }}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
