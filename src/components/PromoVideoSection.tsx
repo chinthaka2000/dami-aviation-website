@@ -1,4 +1,14 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
+
+const isElementInViewport = (el: HTMLElement) => {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
 import { VolumeX, Volume2 } from 'lucide-react';
 
 interface PromoVideoSectionProps {
@@ -9,18 +19,39 @@ interface PromoVideoSectionProps {
 
 const PromoVideoSection: React.FC<PromoVideoSectionProps> = ({ youtubeId }) => {
   const [isMuted, setIsMuted] = useState(true);
-  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const iframeRef = useRef<HTMLVideoElement>(null);
 
   const toggleMute = () => {
-    if (!youtubeId) return; // no-op if no video yet
-    if (iframeRef.current) {
-      const newMuteState = isMuted ? 0 : 1;
-      const currentSrc = iframeRef.current.src;
-      const newSrc = currentSrc.replace(/mute=\d/, `mute=${newMuteState}`);
-      iframeRef.current.src = newSrc;
-      setIsMuted(!isMuted);
+    const videoElement = iframeRef.current;
+    if (videoElement) {
+      videoElement.muted = !videoElement.muted;
+      setIsMuted(videoElement.muted);
     }
   };
+
+  const handleVideoClick = () => {
+    const videoElement = iframeRef.current;
+    if (videoElement) {
+      if (videoElement.paused) {
+        videoElement.play().catch(() => {
+          // Autoplay might be blocked
+        });
+      } else {
+        videoElement.pause();
+      }
+    }
+  };
+
+  useEffect(() => {
+    const videoElement = iframeRef.current;
+    if (videoElement) {
+      videoElement.muted = false; // default unmuted
+      videoElement.play().catch(() => {
+        // Autoplay might be blocked, handle if needed
+      });
+      setIsMuted(false);
+    }
+  }, []);
 
   return (
     <section className="py-20 bg-[#0f2942] relative overflow-hidden">
@@ -42,17 +73,19 @@ const PromoVideoSection: React.FC<PromoVideoSectionProps> = ({ youtubeId }) => {
           <div className="bg-[#0a1929]/50 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-white/10 shadow-xl">
             {youtubeId ? (
               <div className="relative w-full pb-[177.78%] md:pb-[56.25%]" style={{ height: 0 }}>
-                <iframe
+                <video
                   ref={iframeRef}
+                  playsInline
+                  poster="https://res.cloudinary.com/dzz0qlqve/image/upload/v1757521693/Dami_T-shirt/ending_post_3_rcl4wk.jpg"
                   className="absolute top-0 left-0 w-full h-full rounded-xl cursor-pointer"
-                  src={`https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0&rel=0&loop=1&playlist=${youtubeId}&disablekb=1&fs=0&iv_load_policy=3&vq=hd1080&hd=1`}
+                  src="https://res.cloudinary.com/dzz0qlqve/video/upload/v1757521696/Dami_T-shirt/Dami_T-Shit_R5_op3dhw.mp4"
+                  controls
+                  autoPlay
+                  muted={isMuted}
+                  onClick={handleVideoClick}
                   title="DAMI Merchandise Promo Video"
                   style={{ border: 'none' }}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  onClick={toggleMute}
-                ></iframe>
+                />
 
                 {/* Mute/Unmute Button */}
                 <button
